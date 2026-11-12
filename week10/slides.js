@@ -117,13 +117,19 @@ const visuals = {
     <img src="https://www.framestore.com/sites/default/files/styles/full_width_688_x_variable_height/public/2022-06/field%20trip%20to%20mars%20image%202.jpeg?itok=X-vx1knt" alt="Passengers see the Mars terrain through the bus windows">
     <figcaption>Production photographs and reach figures from <a href="${marsResults}" target="_blank" rel="noopener">Framestore’s case materials ↗</a></figcaption>
   </figure>`,
-  'Before posting / What to borrow': `<div class="visual mechanism-grid">
+  'Before posting / What to borrow': `<div class="visual activity-visual campaign-choice">
+    <figure class="visual activity-photo"><img src="media/edit-opening.jpg" alt="A student compares three possible opening frames for a promotional video." width="627" height="627"></figure>
+    <div class="mechanism-grid">
     <section><small>NOTICE A GAP</small><strong>“Why would chocolate need installing?”</strong><p>A specific unanswered question can invite a closer look.</p><a href="${studies.curiosity}">Loewenstein (1994)</a></section>
     <section><small>SAMPLE THE EXPERIENCE</small><strong>Show what the audience sees or does.</strong><p>A small demonstration can convey how the full experience feels.</p><a href="${studies.experience}">Brakus et al. (2009)</a></section>
     <section><small>SHARE WITH SOMEONE</small><strong>“You have to see this.”</strong><p>Activating emotions and the intended recipient can shape what gets shared.</p><a href="${studies.sharing}">Berger &amp; Milkman (2012)</a></section>
     <section><small>MAKE ACTION POSSIBLE</small><strong>Give an interested person an easy next step.</strong><p>Put the prompt where the audience can act on it.</p><a href="${studies.action}">Fogg (2009)</a></section>
+    </div>
   </div>`,
-  '03 / Individual feedback': `<div class="visual mechanism-stack">
-    <section><small>EXAMPLE COMMENT</small><strong>“The opening made me want to try it. Where can I experience it?”</strong></section>
-  </div>`
+  '02 / Team publishing': `<figure class="visual activity-photo"><img src="media/publish-post.jpg" alt="A student checks how the same promotional artwork appears on a laptop and a phone." width="627" height="627"></figure>`,
+  '03 / Individual feedback': `<div class="visual activity-visual">
+    <figure class="visual activity-photo"><img src="media/leave-feedback.jpg" alt="A student types a comment on another team's promotional post." width="627" height="627"></figure>
+    <div class="mechanism-stack"><section><small>EXAMPLE COMMENT</small><strong>“The opening made me want to try it. Where can I experience it?”</strong></section></div>
+  </div>`,
+  'Next class / November 20': `<figure class="visual activity-photo"><img src="media/review-responses.jpg" alt="Two students compare promotional images and handwritten audience notes." width="627" height="627"></figure>`
 };

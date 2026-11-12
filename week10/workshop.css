@@ -162,6 +162,11 @@
 .workshop-resources summary { cursor: pointer; font-weight: 700; }
 .week10 article:has(.workshop-resources[open]) { display: flex; gap: 1.5rem; }
 
+.activity-visual { display: grid; gap: clamp(.65rem, 1.4vw, 1rem); }
+.activity-photo { margin: 0; overflow: hidden; border: 1px solid var(--line); }
+.activity-photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+.campaign-choice .activity-photo img { aspect-ratio: 5 / 2; }
+
 @media (max-width: 800px) {
   .week10 article, .week10 article.with-visual { min-height: 63svh; }
   .week10 .launch-mark { min-height: 180px; }
