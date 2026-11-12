@@ -1,5 +1,4 @@
 const figJam = 'https://www.figma.com/board/VEX2J0NwnMC9NLmW6R6hR8/Media-Business---Startup?node-id=268-2';
-const week9Module = 'https://app.notion.com/p/AI-Campaign-Channel-Planning-3d57c00fe5ad81c18421f6ed85ebdea1';
 const omegaTrailer = 'https://www.youtube.com/watch?v=sMwu6CwS0jI';
 const omegaVisit = 'https://meowwolf.com/visit/las-vegas';
 const dreamGarden = 'https://www.dstrict.com/COMMERCIAL/?bmode=view&idx=13263730';
@@ -27,8 +26,7 @@ const slides = [
     content: ["Show your draft and today’s plan", "Each team opens its Week 9 promotional draft and briefly explains how it will promote the project today.", [
       ["Show", "Share the copy, image or short clip your team prepared."],
       ["Plan", "Who do you want to reach, what do you want to tell them, and where will you post it?"]
-    ]],
-    link: ["Open Week 9 · AI Campaign &amp; Channel Planning", week9Module]
+    ]]
   },
   {
     tag: "Case 01 / Meow Wolf", theme: "ink comparison",
