@@ -21,10 +21,10 @@ const slides = [
     content: ["From first look to first action", "What makes someone stop, look closer and take the next step? Today your team will revise and publish one post."]
   },
   {
-    tag: "Warm-up / 10 min", theme: "chalk",
-    content: ["Give your draft five seconds", "Show another team your Week 9 draft for five seconds.", [
-      ["Reader","What is it, who is it for, and what would you do next?"],
-      ["Team","Note the first question the reader could not answer."]
+    tag: "Individual presentations / 30 min", theme: "chalk",
+    content: ["Show what you developed last time", "Everyone presents their own work from Week 9. Keep it to 30–45 seconds each.", [
+      ["Show","Open the draft, visual, or other piece you developed."],
+      ["Explain","What changed, and why did you change it?"]
     ]],
     link: ["Open team FigJam", figJam]
   },
@@ -53,25 +53,12 @@ const slides = [
     content: ["Why might people respond?", "Use the research to explain one choice in a case. Then turn that explanation into a change your team can try."]
   },
   {
-    tag: "Worked example / Same project, two readers", theme: "chalk comparison",
-    content: ["One project, two different posts", "Compare a social video for potential visitors with a project page for people who program exhibitions. Both use the same fictional sound map prototype."]
-  },
-  {
-    tag: "Workshop / Revise · 35 min", theme: "signal",
-    content: ["Make one post ready to publish", "Use your Week 9 draft and the cold reader’s feedback.", [
-      ["5 min · Decide","Choose one audience, one channel and one action. Pick one idea from a case to adapt."],
-      ["20 min · Make","Edit the opening, show a visual or audio sample, and prepare the link or reply prompt."],
-      ["10 min · Check","Preview on a phone, test the next action and assign one teammate to publish."]
+    tag: "Team workshop / 55 min", theme: "signal",
+    content: ["Revise and test one post", "Pick one idea from a case and adapt it to your team’s Week 9 work.", [
+      ["35 min · Revise","Choose who it’s for and where you’ll post it. Show a sample and give the audience one thing to do."],
+      ["20 min · Test","Show another team the preview for five seconds. Ask what they think it is and what they would do next. Fix one point of confusion."]
     ]],
     link: ["Open team FigJam", figJam]
-  },
-  {
-    tag: "Peer test / 20 min", theme: "ink",
-    content: ["Let another team try it", "Swap previews. Give them five seconds to look, then ask them to try the action.", [
-      ["Read","“What is this, and who is it for?”"],
-      ["Act","“Where would you tap, click or reply?” Have them do it."],
-      ["Revise","Each team fixes one place where the reader hesitated."]
-    ]]
   },
   {
     tag: "Workshop / Publish and record · 25 min", theme: "chalk",
@@ -81,7 +68,7 @@ const slides = [
     ]]
   },
   {
-    tag: "Team share / 20 min", theme: "ink",
+    tag: "Team share / 15 min", theme: "ink",
     content: ["Show your post in 60 seconds", "Open the live link. Say who it is for, show one change, and name the response you will check on November 20.", [
       ["Observe","Choose a relevant reply, a click you can measure, or a demo enquiry."],
       ["Next week","Record the time window and the observed response. Mark unavailable data as unavailable."]
@@ -112,12 +99,12 @@ const visuals = {
     <div class="launch-grid"></div>
     <span>FIRST LOOK</span><b>→</b><span>FIRST ACTION</span>
   </div>`,
-  'Warm-up / 10 min': `<div class="visual schedule-grid">
-    <section><strong>55 min</strong><p>Draft warm-up · 10<br>Case analysis and discussion · 25<br>Mini lesson and example · 20</p></section>
+  'Individual presentations / 30 min': `<div class="visual schedule-grid">
+    <section><strong>60 min</strong><p>Individual presentations · 30<br>Campaign cases · 20<br>Why they work · 10</p></section>
     <section><strong>10 min</strong><p>Break</p></section>
     <section><strong>55 min</strong><p>Team production · 35<br>Peer test and revision · 20</p></section>
     <section><strong>10 min</strong><p>Break</p></section>
-    <section><strong>50 min</strong><p>Publish and record · 25<br>Team show and tell · 20<br>Submission and wrap-up · 5</p></section>
+    <section><strong>45 min</strong><p>Publish and record · 25<br>Team show and tell · 15<br>Submission and wrap-up · 5</p></section>
   </div>`,
   'Case / Meow Wolf': `<div class="visual case-pair"><figure class="visual source-media">
     <a class="media-preview" href="${omegaTrailer}" target="_blank" rel="noopener" aria-label="Watch Meow Wolf’s 404 Chocolate commercial">
@@ -151,30 +138,14 @@ const visuals = {
     <section><small>SHARE WITH SOMEONE</small><strong>“You have to see this.”</strong><p>Activating emotions and the intended recipient can shape what gets shared.</p><a href="${studies.sharing}">Berger &amp; Milkman (2012)</a></section>
     <section><small>MAKE ACTION POSSIBLE</small><strong>Give an interested person an easy next step.</strong><p>Put the prompt where the audience can act on it.</p><a href="${studies.action}">Fogg (2009)</a></section>
   </div>`,
-  'Worked example / Same project, two readers': `<div class="visual sample-grid">
-    <section class="campaign-sample social-sample">
-      <p class="sample-eyebrow">SOCIAL VIDEO · LOCAL EXPLORERS</p>
-      <div class="sample-art" aria-hidden="true"><span>NIGHT<br>ROUTES</span><i></i><i></i><i></i></div>
-      <h2>What does Daejeon sound like after dark?</h2>
-      <p>Hear a late-night market in our 30-second sound map prototype.</p>
-      <p class="sample-action">Reply with a place we should record next.</p>
-    </section>
-    <section class="campaign-sample web-sample">
-      <p class="sample-eyebrow">PROJECT WEBSITE · FESTIVAL PROGRAMMERS</p>
-      <div class="sample-art" aria-hidden="true"><span>NIGHT<br>ROUTES</span><i></i><i></i><i></i></div>
-      <h2>An interactive sound map for a listening station</h2>
-      <p>See how visitors can tap a map to hear field recordings. This prototype previews one location.</p>
-      <p class="sample-action">Ask about a venue demo.</p>
-    </section>
-  </div>`,
   'Workshop / Publish and record · 25 min': `<div class="visual execution-example">
     <h2>Night Routes · Example record</h2>
     <dl>
-      <div><dt>Published</dt><dd>November 13 · 15:04 KST</dd></div>
+      <div><dt>Published</dt><dd>November 13 · 15:30 KST</dd></div>
       <div><dt>Target audience</dt><dd>Local explorers in Daejeon</dd></div>
       <div><dt>Direct link</dt><dd>[URL of the published post]</dd></div>
       <div><dt>Action to observe</dt><dd>Replies suggesting a place to record</dd></div>
-      <div><dt>Starting point</dt><dd>0 replies at 15:08 KST</dd></div>
+      <div><dt>Starting point</dt><dd>0 replies at 15:34 KST</dd></div>
     </dl>
   </div>`,
   'Submission / November 19': `<details class="visual workshop-resources">
