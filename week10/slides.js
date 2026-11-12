@@ -18,7 +18,7 @@ const studies = {
 const slides = [
   {
     tag: "Week 10 / November 13, 2026", theme: "launch-cover",
-    content: ["From first look to first action", "Last week your team chose a promotion goal and a channel, then drafted a first post. Today each team presents its draft and plan, looks at campaign examples, publishes one post, and gets feedback."],
+    content: ["From first look to first action", "Last week your team chose a promotion goal and a channel, then drafted a first post. Today each team presents its draft and plan, looks at campaign examples, publishes its post, and gets feedback."],
     showStartButton: false
   },
   {
@@ -54,8 +54,8 @@ const slides = [
   },
   {
     tag: "02 / Team publishing", theme: "signal",
-    content: ["Publish and share one link", "Publish one promotional post per team on the website or social channel you chose in Week 9.", [
-      ["Share in FigJam", "Paste only the direct link to your published post in your team’s space so the other teams can open it."]
+    content: ["Publish and share your post", "Publish your team’s promotional post on the website or social channel you chose in Week 9.", [
+      ["Share in FigJam", "Share the link to your published post in your team’s FigJam space."]
     ]],
     link: ["Open team FigJam", figJam]
   },
@@ -75,7 +75,7 @@ const slides = [
   },
   {
     tag: "Submission / November 19", theme: "signal",
-    content: ["One published link in FigJam", "By Thursday, November 19 at 23:59 KST, one representative shares the direct link to the team’s published post in FigJam."],
+    content: ["Share your post link in FigJam", "Share the link to your team’s published post in FigJam by Thursday, November 19 at 23:59 KST."],
     link: ["Open team FigJam", figJam]
   }
 ];
@@ -98,7 +98,7 @@ const visuals = {
   '01 / Team presentations': `<div class="visual schedule-grid">
     <section><strong>Present</strong><p>Show the draft and today’s promotion plan.</p></section>
     <section><strong>Look</strong><p>Watch the campaign examples before posting.</p></section>
-    <section><strong>Publish</strong><p>Share one live link in FigJam.</p></section>
+    <section><strong>Publish</strong><p>Share your post link in FigJam.</p></section>
     <section><strong>Compare</strong><p>Hear how another team reads your post.</p></section>
   </div>`,
   'Case 01 / Meow Wolf': `<div class="visual case-pair"><figure class="visual source-media">
