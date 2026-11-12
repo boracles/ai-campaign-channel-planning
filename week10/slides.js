@@ -1,5 +1,6 @@
 const figJam = 'https://www.figma.com/board/VEX2J0NwnMC9NLmW6R6hR8/Media-Business---Startup?node-id=268-2';
 const week9Module = 'https://app.notion.com/p/AI-Campaign-Channel-Planning-3d57c00fe5ad81c18421f6ed85ebdea1';
+const week10Module = 'https://app.notion.com/p/Publish-on-Website-or-Social-Media-3d07c00fe5ad81b2b42ad63faa831950';
 const omegaTrailer = 'https://www.youtube.com/watch?v=sMwu6CwS0jI';
 const omegaVisit = 'https://meowwolf.com/visit/las-vegas';
 const dreamGarden = 'https://www.dstrict.com/COMMERCIAL/?bmode=view&idx=13263730';
@@ -19,7 +20,8 @@ const studies = {
 const slides = [
   {
     tag: "Week 10 / November 13, 2026", theme: "launch-cover",
-    content: ["From first look to first action", "Last week your team chose a promotion goal and a channel, then drafted a first post. Today you’ll show what you developed, refine the draft and publish it."]
+    content: ["From first look to first action", "Last week your team chose a promotion goal and a channel, then drafted a first post. Today you’ll show what you developed, refine the draft and publish it."],
+    link: ["Open Week 10 · Publish on Website or Social Media", week10Module]
   },
   {
     tag: "Individual presentations / 30 min", theme: "chalk",
@@ -64,7 +66,7 @@ const slides = [
   },
   {
     tag: "Workshop / Publish and record · 25 min", theme: "chalk",
-    content: ["Publish, verify and record", "Publish one team post on the website or social channel you chose. Personal accounts are optional.", [
+    content: ["Publish, verify and record", "Publish one team post on the website or social channel you chose.", [
       ["Before","Check the media permissions, the people shown and who can see the post."],
       ["After","Ask another teammate to open the direct link and try the next step. Log the post in section 3-2."]
     ]]
