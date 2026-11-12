@@ -55,7 +55,10 @@ const slides = [
   },
   {
     tag: "Case recap / Audience response", theme: "ink research",
-    content: ["Why might people respond?", "Look back at what the campaigns let people notice, experience, share or do next."]
+    content: [
+      "Why do people look, share or act?",
+      "Four research ideas explain different parts of audience response. Use the idea that fits what you want people to do."
+    ]
   },
   {
     tag: "02 / Team publishing", theme: "signal",
@@ -66,11 +69,21 @@ const slides = [
   },
   {
     tag: "03 / Individual feedback", theme: "ink",
-    content: ["Respond as a potential user", "Choose a project from another team that you would like to try, visit or learn more about.", [
-      ["Leave a response", "Write a short reaction or question in the anonymous feedback form."],
-      ["Show the instructor", "At your team check, show your form’s submission confirmation screen."]
-    ]],
-    link: ["Open the anonymous feedback form", "https://docs.google.com/forms/d/e/1FAIpQLSfg-MFsJwoyE3odqcGKae35d7c3g1ihI_CaP5QHd92PoPIASQ/viewform?usp=publish-editor"]
+    content: [
+      "Give anonymous feedback",
+      "Open two posts in FigJam from two different teams other than your own.",
+      [
+        [
+          "Write one response per post",
+          "As a potential audience member, write a short reaction or a question you genuinely had."
+        ],
+        [
+          "Submit once",
+          "Fill in both responses in the form. Show the instructor your submission confirmation before your team wraps up."
+        ]
+      ]
+    ],
+    link: ["Open anonymous feedback form","https://docs.google.com/forms/d/e/1FAIpQLSfg-MFsJwoyE3odqcGKae35d7c3g1ihI_CaP5QHd92PoPIASQ/viewform?usp=publish-editor"]
   },
   {
     tag: "Next class / November 20", theme: "chalk",
@@ -100,7 +113,7 @@ const visuals = {
     <section><strong>Present</strong><p>Show the draft and today’s promotion plan.</p></section>
     <section><strong>Look</strong><p>Watch the campaign examples before posting.</p></section>
     <section><strong>Publish</strong><p>Share your post link in FigJam.</p></section>
-    <section><strong>Respond</strong><p>Leave a response on a project that interests you.</p></section>
+    <section><strong>Respond</strong><p>Write anonymous feedback on two teams’ posts.</p></section>
   </div>`,
   'Case 01 / Meow Wolf': `<div class="visual case-pair"><figure class="visual source-media">
     <a class="media-preview" href="${omegaTrailer}" target="_blank" rel="noopener" aria-label="Watch Meow Wolf’s 404 Chocolate commercial">
@@ -137,16 +150,16 @@ const visuals = {
   'Case recap / Audience response': `<div class="visual activity-visual campaign-choice">
     <figure class="visual activity-photo"><img src="media/edit-opening.jpg" alt="A student compares three possible opening frames for a promotional video." width="627" height="627"></figure>
     <div class="mechanism-grid">
-    <section><small>NOTICE A GAP</small><strong>“Why would chocolate need installing?”</strong><p>A specific unanswered question can invite a closer look.</p><a href="${studies.curiosity}">Loewenstein (1994)</a></section>
-    <section><small>SAMPLE THE EXPERIENCE</small><strong>Show what the audience sees or does.</strong><p>A small demonstration can convey how the full experience feels.</p><a href="${studies.experience}">Brakus et al. (2009)</a></section>
-    <section><small>SHARE WITH SOMEONE</small><strong>“You have to see this.”</strong><p>Activating emotions and the intended recipient can shape what gets shared.</p><a href="${studies.sharing}">Berger &amp; Milkman (2012)</a></section>
-    <section><small>MAKE ACTION POSSIBLE</small><strong>Give an interested person an easy next step.</strong><p>Put the prompt where the audience can act on it.</p><a href="${studies.action}">Fogg (2009)</a></section>
+    <section><small>ATTENTION</small><strong>Information gap</strong><p>Curiosity begins when people notice something they don’t know. Omega Mart makes a familiar product puzzling by asking people to install chocolate.</p><a href="${studies.curiosity}">Loewenstein (1994)</a></section>
+    <section><small>EXPERIENCE</small><strong>Brand experience</strong><p>Brand cues can make people sense, feel, think or do something. The Mars bus made a STEM campaign tangible through the view from the window.</p><a href="${studies.experience}">Brakus et al. (2009)</a></section>
+    <section><small>SHARING</small><strong>Emotional arousal</strong><p>Content that evokes high-arousal emotions such as awe is more likely to be shared. Consider the reaction to seeing the <em>Severance</em> office in a busy station.</p><a href="${studies.sharing}">Berger &amp; Milkman (2012)</a></section>
+    <section><small>ACTION</small><strong>Motivation, ability, trigger</strong><p>People act when they want to do something, can do it and receive a cue at the right moment. Omega Mart’s visit page puts a ticket button within reach.</p><a href="${studies.action}">Fogg (2009)</a></section>
     </div>
   </div>`,
   '02 / Team publishing': `<figure class="visual activity-photo"><img src="media/publish-post.jpg" alt="A student checks how the same promotional artwork appears on a laptop and a phone." width="627" height="627"></figure>`,
   '03 / Individual feedback': `<div class="visual activity-visual">
     <figure class="visual activity-photo"><img src="media/leave-feedback.jpg" alt="A student types a comment on another team's promotional post." width="627" height="627"></figure>
-    <div class="mechanism-stack"><section><small>EXAMPLE COMMENT</small><strong>“The opening made me want to try it. Where can I experience it?”</strong></section></div>
+    <div class="mechanism-stack"><section><small>EXAMPLE FEEDBACK</small><strong>“The opening made me want to try it. Where can I experience it?”</strong></section></div>
   </div>`,
   'Next class / November 20': `<figure class="visual activity-photo"><img src="media/review-responses.jpg" alt="Two students compare promotional images and handwritten audience notes." width="627" height="627"></figure>`
 };
