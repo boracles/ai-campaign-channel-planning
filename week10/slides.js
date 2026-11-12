@@ -1,18 +1,14 @@
 const figJam = 'https://www.figma.com/board/VEX2J0NwnMC9NLmW6R6hR8/Media-Business---Startup?node-id=268-2';
 const omegaTrailer = 'https://www.youtube.com/watch?v=sMwu6CwS0jI';
 const omegaVisit = 'https://meowwolf.com/visit/las-vegas';
-const dreamGarden = 'https://www.dstrict.com/COMMERCIAL/?bmode=view&idx=13263730';
 const severance = 'https://www.youtube.com/watch?v=QYVyTvnAsQw';
 const mars = 'https://www.framestore.com/work/field-trip-mars';
 const marsResults = 'https://framestorevr.com/field-trip-to-mars';
-const greenKnight = 'https://shop.a24films.com/products/the-green-knight-a-fantasy-roleplaying-game';
 const studies = {
   curiosity: 'https://www.cmu.edu/dietrich/sds/docs/loewenstein/PsychofCuriosity.pdf',
   experience: 'https://doi.org/10.1509/jmkg.73.3.052',
   sharing: 'https://doi.org/10.1509/JMR.10.0353',
-  selfPresentation: 'https://doi.org/10.1509/jmr.13.0238',
-  action: 'https://doi.org/10.1145/1541948.1541999',
-  measurement: 'https://www.kellogg.northwestern.edu/academics-research/research/detail/2019/a-comparison-of-approaches-to-advertising-measurement-evidence-from/'
+  action: 'https://doi.org/10.1145/1541948.1541999'
 };
 
 const slides = [
@@ -72,11 +68,6 @@ const slides = [
     content: ["Bring two impressions to Week 11", "Keep one line about the impression your team intended and one line about how the other team read the post.", [
       ["Next class", "Compare the two impressions with any available audience response, then revise the opening copy, main image or first screen."]
     ]]
-  },
-  {
-    tag: "Submission / In class", theme: "signal",
-    content: ["Share your post link in FigJam", "Share the link to your team’s published post in your team’s FigJam space before class ends."],
-    link: ["Open team FigJam", figJam]
   }
 ];
 
@@ -137,53 +128,5 @@ const visuals = {
     <section><small>WHAT THE OTHER TEAM SAW</small><strong>“A guide to places to visit at night.”</strong></section>
     <section><small>WHAT THE TEAM MEANT</small><strong>“A map of sounds recorded at night.”</strong></section>
     <section><small>ONE CHANGE</small><strong>Play a market sound in the opening shot.</strong></section>
-  </div>`,
-  'Submission / In class': `<details class="visual workshop-resources">
-    <summary>Research sources and more cases</summary>
-    <div class="case-pair additional-cases">
-      ${imageCase({
-    url: 'https://newsroom.spotify.com/media-kit/2024-wrapped/',
-    image: 'https://storage.googleapis.com/pr-newsroom-wp/1/2024/12/SummaryShareCard.jpg',
-    alt: 'Spotify Wrapped 2024 example share cards showing listening summaries',
-    caption: 'Spotify Newsroom · 2024 Wrapped summary share card',
-    fit: 'contain-media'
-  })}
-      <figure class="visual source-media">
-    <a class="media-preview" href="${dreamGarden}" target="_blank" rel="noopener" aria-label="Open d’strict’s Dreaming Garden project page">
-      <img src="https://i.ytimg.com/vi/hrU85UBb5vo/hqdefault.jpg" alt="Video preview for Dreaming Garden at Café Dior Seongsu">
-      <span aria-hidden="true">▶</span>
-    </a>
-    <figcaption>d’strict · Café Dior Seongsu, Dreaming Garden</figcaption>
-  </figure>
-      ${imageCase({
-    url: greenKnight,
-    image: 'https://shop.a24films.com/cdn/shop/files/01-Hero_eca73425-389c-4c62-97be-958ded94d8d9.jpg?v=1759509683&width=900',
-    alt: 'The Green Knight roleplaying game box and tabletop components',
-    caption: 'A24 · The Green Knight: A Fantasy Roleplaying Game',
-    fit: 'contain-media'
-  })}
-    </div>
-    <div class="references-grid">
-    <section><h2>Research</h2>
-      <ul>
-        <li><a href="${studies.curiosity}">Loewenstein (1994) · The Psychology of Curiosity</a></li>
-        <li><a href="${studies.experience}">Brakus, Schmitt &amp; Zarantonello (2009) · Brand Experience</a></li>
-        <li><a href="${studies.sharing}">Berger &amp; Milkman (2012) · What Makes Online Content Viral?</a></li>
-        <li><a href="${studies.selfPresentation}">Barasch &amp; Berger (2014) · Broadcasting and Narrowcasting</a></li>
-        <li><a href="${studies.action}">Fogg (2009) · A Behavior Model for Persuasive Design</a></li>
-        <li><a href="${studies.measurement}">Gordon et al. (2019) · Advertising Measurement</a></li>
-      </ul>
-    </section>
-    <section><h2>Campaigns</h2>
-      <ul>
-        <li><a href="${omegaTrailer}">Meow Wolf · 404 Chocolate commercial</a> and <a href="${omegaVisit}">Omega Mart visit page</a></li>
-        <li><a href="${severance}">Apple TV · Severance Grand Central Pop-Up</a></li>
-        <li><a href="${mars}">Framestore · Field Trip to Mars</a> and <a href="${marsResults}">reported reach</a></li>
-        <li><a href="https://newsroom.spotify.com/media-kit/2024-wrapped/">Spotify · 2024 Wrapped media kit</a> and <a href="https://s29.q4cdn.com/175625835/files/doc_financials/2024/q4/Q4-2024-Shareholder-Deck-FINAL.pdf">shareholder results</a></li>
-        <li><a href="${dreamGarden}">d’strict · Café Dior Seongsu, Dreaming Garden</a></li>
-        <li><a href="${greenKnight}">A24 · The Green Knight tabletop game</a></li>
-      </ul>
-    </section>
-  </div>
-  </details>`
+  </div>`
 };
