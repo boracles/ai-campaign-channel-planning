@@ -45,8 +45,17 @@ const slides = [
     link: ["Open Framestore’s production case", mars]
   },
   {
-    tag: "Before posting / What to borrow", theme: "ink research",
-    content: ["Why might people respond?", "Pick one idea from the cases that fits your post. Decide what you’ll use before you publish."]
+    tag: "Before posting / Check your metrics", theme: "chalk",
+    content: ["How far did your post travel?", "Choose the metric that matches your goal. Reach counts accounts. Views can include repeat plays.", [
+      ["Get seen", "Reach or views"],
+      ["Get shared", "Shares, saves or comments"],
+      ["Prompt an action", "Site visits, button clicks or inquiries"]
+    ], "Before posting, check that your channel can record what you want to measure."],
+    link: ["Week 10 guide and website code", "https://app.notion.com/p/Publish-on-Website-or-Social-Media-3d07c00fe5ad81b2b42ad63faa831950"]
+  },
+  {
+    tag: "Case recap / Audience response", theme: "ink research",
+    content: ["Why might people respond?", "Look back at what the campaigns let people notice, experience, share or do next."]
   },
   {
     tag: "02 / Team publishing", theme: "signal",
@@ -58,15 +67,17 @@ const slides = [
   {
     tag: "03 / Individual feedback", theme: "ink",
     content: ["Respond as a potential user", "Choose a project from another team that you would like to try, visit or learn more about.", [
-      ["Leave a response", "Write a short comment on the post or send a question through the project website. If neither is available, write next to the project’s post link in FigJam."],
-      ["Show the instructor", "Before you leave, show your posted comment, the inquiry confirmation or your FigJam response."]
-    ]]
+      ["Leave a response", "Write a short reaction or question in the anonymous feedback form."],
+      ["Show the instructor", "At your team check, show your form’s submission confirmation screen."]
+    ]],
+    link: ["Open the anonymous feedback form", "https://docs.google.com/forms/d/e/1FAIpQLSfg-MFsJwoyE3odqcGKae35d7c3g1ihI_CaP5QHd92PoPIASQ/viewform?usp=publish-editor"]
   },
   {
     tag: "Next class / November 20", theme: "chalk",
-    content: ["Review the responses you received", "Bring the comments and inquiries your team received. We’ll look at what people noticed and what they asked about.", [
-      ["Next class", "Use the responses to decide what to clarify in your opening copy, image or first screen."]
-    ]]
+    content: ["Choose what to make next", "Check the first week’s numbers for your goal and read any comments, inquiries or anonymous feedback you received.", [
+      ["Team decision", "Use one piece of evidence to choose what to make or change for your audience."]
+    ]],
+    link: ["Week 11 class plan", "https://app.notion.com/p/Campaign-Response-Brand-Message-3d07c00fe5ad8176b0daf077fe38624d"]
   }
 ];
 
@@ -117,7 +128,13 @@ const visuals = {
     <img src="https://www.framestore.com/sites/default/files/styles/full_width_688_x_variable_height/public/2022-06/field%20trip%20to%20mars%20image%202.jpeg?itok=X-vx1knt" alt="Passengers see the Mars terrain through the bus windows">
     <figcaption>Production photographs and reach figures from <a href="${marsResults}" target="_blank" rel="noopener">Framestore’s case materials ↗</a></figcaption>
   </figure>`,
-  'Before posting / What to borrow': `<div class="visual activity-visual campaign-choice">
+  'Before posting / Check your metrics': `<div class="visual schedule-grid">
+    <section><strong>Instagram</strong><p>Post or Reel → View insights</p></section>
+    <section><strong>Facebook</strong><p>Meta Business Suite → Insights → Content</p></section>
+    <section><strong>TikTok</strong><p>Your video → More insights</p></section>
+    <section><strong>Website</strong><p>Add GA4 for page views and button clicks. Tag social links to see where visits came from.</p></section>
+  </div>`,
+  'Case recap / Audience response': `<div class="visual activity-visual campaign-choice">
     <figure class="visual activity-photo"><img src="media/edit-opening.jpg" alt="A student compares three possible opening frames for a promotional video." width="627" height="627"></figure>
     <div class="mechanism-grid">
     <section><small>NOTICE A GAP</small><strong>“Why would chocolate need installing?”</strong><p>A specific unanswered question can invite a closer look.</p><a href="${studies.curiosity}">Loewenstein (1994)</a></section>
