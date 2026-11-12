@@ -20,11 +20,11 @@ const studies = {
 const slides = [
   {
     tag: "Week 10 / November 13, 2026", theme: "launch-cover",
-    content: ["From first look to first action", "Last week your team chose a promotion goal and a channel, then drafted a first post. Today you’ll show what you developed, refine the draft and publish it."],
+    content: ["From first look to first action", "Last week your team chose a promotion goal and a channel, then drafted a first post. Today you’ll present your work, publish one post per team and get feedback on the live post."],
     link: ["Open Week 10 · Publish on Website or Social Media", week10Module]
   },
   {
-    tag: "Individual presentations / 30 min", theme: "chalk",
+    tag: "01 / Individual presentations", theme: "chalk",
     content: ["Show what you developed last time", "Open your team’s Week 9 work. Each person shows their contribution in 30–45 seconds.", [
       ["Promotion goal", "Who did your team want to reach, and what did you want them to know?"],
       ["Promotion channel", "Which website or social channel did you choose?"],
@@ -33,49 +33,26 @@ const slides = [
     link: ["Open Week 9 · AI Campaign &amp; Channel Planning", week9Module]
   },
   {
-    tag: "Case / Meow Wolf", theme: "ink comparison",
-    content: ["One campaign, two jobs", "Watch the first 25 seconds of the 404 Chocolate commercial, then open the visit page. What does each channel help the audience discover or do?"]
-  },
-  {
-    tag: "Case / Apple TV", theme: "ink media-case",
-    content: ["Put the story in public", "Apple TV staged the fictional Lumon office in a glass cube at Grand Central Terminal to promote Severance Season 2.", [
-      ["Creative choice","The performance lets commuters glimpse the story world. The glass cube gives viewers a frame they can capture and share."],
-      ["Discuss","What in the first frame would make someone unfamiliar with the show stop?"]
-    ]],
-    link: ["Watch the official pop-up footage", severance]
-  },
-  {
-    tag: "Case / Framestore × McCann", theme: "chalk media-case",
-    content: ["Make the promise an experience", "A school bus used its windows as screens to take groups on a virtual trip to Mars.", [
-      ["Creative choice","Passengers could see the terrain change and discover it together."],
-      ["Discuss","How could your team give people a five-second sample of your project?"]
-    ]],
-    link: ["Open Framestore’s production case", mars]
-  },
-  {
-    tag: "Research / Attention, sharing and action", theme: "ink research",
-    content: ["Why might people respond?", "Use the research to explain one choice in a case. Then turn that explanation into a change your team can try."]
-  },
-  {
-    tag: "Team workshop / 55 min", theme: "signal",
-    content: ["Revise and test one post", "Take one idea from a case and use it to improve the draft your team presented.", [
-      ["35 min · Revise", "Use your Week 9 promotion goal and channel to revise the copy, image or clip. Give the audience one clear next step."],
-      ["20 min · Test", "Show another team the preview for five seconds. Ask what they learned and what they would do next. Fix one point of confusion."]
+    tag: "02 / Team publishing", theme: "signal",
+    content: ["Publish one post per team", "Use the work you just presented. If your team has several drafts, choose one to publish on your Week 9 channel.", [
+      ["Before posting", "Make any quick fixes. Check the media permissions and who can see the post."],
+      ["After posting", "Ask another teammate to open the direct link and try the next step. Have the live link ready for feedback."]
     ]],
     link: ["Open team FigJam", figJam]
   },
   {
-    tag: "Workshop / Publish and record · 25 min", theme: "chalk",
-    content: ["Publish, verify and record", "Publish one team post on the website or social channel you chose.", [
-      ["Before","Check the media permissions, the people shown and who can see the post."],
-      ["After","Ask another teammate to open the direct link and try the next step. Log the post in section 3-2."]
+    tag: "03 / Team feedback", theme: "ink",
+    content: ["Review the live post together", "Open your team’s published post for the instructor. Say who it’s for and what you want them to know or do.", [
+      ["First impression", "Is the project and its message clear at a glance?"],
+      ["Next step", "Can the intended audience easily watch, click, reply or get in touch?"],
+      ["Team takeaway", "Write down one concrete change from the feedback."]
     ]]
   },
   {
-    tag: "Team share / 15 min", theme: "ink",
-    content: ["Show your post in 60 seconds", "Open the live link. Say who it is for, show one change, and name the response you will check on November 20.", [
-      ["Observe","Choose a relevant reply, a click you can measure, or a demo enquiry."],
-      ["Next week","Record the time window and the observed response. Mark unavailable data as unavailable."]
+    tag: "After feedback / Section 3-2", theme: "chalk",
+    content: ["Make one change and record the post", "Apply the change you agreed on if you can do it in class. Check the direct link again.", [
+      ["Record", "Log the publication date, target audience and final link in section 3-2."],
+      ["Next week", "Keep any available starting figures and when you checked them. We’ll review responses on November 20."]
     ]]
   },
   {
@@ -85,6 +62,30 @@ const slides = [
       ["Team roles","One line per team member with their name and contribution."]
     ]],
     link: ["Open team FigJam", figJam]
+  },
+  {
+    tag: "Reference case / Meow Wolf", theme: "ink comparison",
+    content: ["One campaign, two jobs", "Watch the first 25 seconds of the 404 Chocolate commercial, then open the visit page. What does each channel help the audience discover or do?"]
+  },
+  {
+    tag: "Reference case / Apple TV", theme: "ink media-case",
+    content: ["Put the story in public", "Apple TV staged the fictional Lumon office in a glass cube at Grand Central Terminal to promote Severance Season 2.", [
+      ["Creative choice","The performance lets commuters glimpse the story world. The glass cube gives viewers a frame they can capture and share."],
+      ["Discuss","What in the first frame would make someone unfamiliar with the show stop?"]
+    ]],
+    link: ["Watch the official pop-up footage", severance]
+  },
+  {
+    tag: "Reference case / Framestore × McCann", theme: "chalk media-case",
+    content: ["Make the promise an experience", "A school bus used its windows as screens to take groups on a virtual trip to Mars.", [
+      ["Creative choice","Passengers could see the terrain change and discover it together."],
+      ["Discuss","How could your team give people a five-second sample of your project?"]
+    ]],
+    link: ["Open Framestore’s production case", mars]
+  },
+  {
+    tag: "Reference / Attention, sharing and action", theme: "ink research",
+    content: ["Why might people respond?", "Use these ideas when you discuss what to improve in your team’s post."]
   }
 ];
 
@@ -103,14 +104,12 @@ const visuals = {
     <div class="launch-grid"></div>
     <span>FIRST LOOK</span><b>→</b><span>FIRST ACTION</span>
   </div>`,
-  'Individual presentations / 30 min': `<div class="visual schedule-grid">
-    <section><strong>60 min</strong><p>Individual presentations · 30<br>Campaign cases · 20<br>Why they work · 10</p></section>
-    <section><strong>10 min</strong><p>Break</p></section>
-    <section><strong>55 min</strong><p>Team production · 35<br>Peer test and revision · 20</p></section>
-    <section><strong>10 min</strong><p>Break</p></section>
-    <section><strong>45 min</strong><p>Publish and record · 25<br>Team show and tell · 15<br>Submission and wrap-up · 5</p></section>
+  '01 / Individual presentations': `<div class="visual schedule-grid">
+    <section><strong>01 · Present</strong><p>Show what you developed individually.</p></section>
+    <section><strong>02 · Publish</strong><p>Put one team post live.</p></section>
+    <section><strong>03 · Get feedback</strong><p>Open the published post and discuss one change with the instructor.</p></section>
   </div>`,
-  'Case / Meow Wolf': `<div class="visual case-pair"><figure class="visual source-media">
+  'Reference case / Meow Wolf': `<div class="visual case-pair"><figure class="visual source-media">
     <a class="media-preview" href="${omegaTrailer}" target="_blank" rel="noopener" aria-label="Watch Meow Wolf’s 404 Chocolate commercial">
       <img src="https://i.ytimg.com/vi/sMwu6CwS0jI/hqdefault.jpg" alt="Video preview for Meow Wolf’s 404 Chocolate commercial">
       <span aria-hidden="true">▶</span>
@@ -124,25 +123,25 @@ const visuals = {
     </a>
     <figcaption>Meow Wolf · Omega Mart visit page</figcaption>
   </figure></div>`,
-  'Case / Apple TV': imageCase({
+  'Reference case / Apple TV': imageCase({
     url: severance,
     image: 'https://i.ytimg.com/vi/QYVyTvnAsQw/hqdefault.jpg',
     alt: 'Apple TV’s footage of the Severance office pop-up at Grand Central Terminal',
     caption: 'Apple TV · Inside the Grand Central Terminal Pop-Up',
     mark: '▶'
   }),
-  'Case / Framestore × McCann': `<figure class="visual mars-stills">
+  'Reference case / Framestore × McCann': `<figure class="visual mars-stills">
     <img src="https://www.framestore.com/sites/default/files/styles/full_width_688_x_variable_height/public/2022-06/field%20trip%20to%20mars%20image.jpeg?itok=svnJyjMT" alt="Children queue outside the yellow school bus">
     <img src="https://www.framestore.com/sites/default/files/styles/full_width_688_x_variable_height/public/2022-06/field%20trip%20to%20mars%20image%202.jpeg?itok=X-vx1knt" alt="Passengers see the Mars terrain through the bus windows">
     <figcaption>Production photographs and reach figures from <a href="${marsResults}" target="_blank" rel="noopener">Framestore’s case materials ↗</a></figcaption>
   </figure>`,
-  'Research / Attention, sharing and action': `<div class="visual mechanism-grid">
+  'Reference / Attention, sharing and action': `<div class="visual mechanism-grid">
     <section><small>NOTICE A GAP</small><strong>“Why would chocolate need installing?”</strong><p>A specific unanswered question can invite a closer look.</p><a href="${studies.curiosity}">Loewenstein (1994)</a></section>
     <section><small>SAMPLE THE EXPERIENCE</small><strong>Show what the audience sees or does.</strong><p>A small demonstration can convey how the full experience feels.</p><a href="${studies.experience}">Brakus et al. (2009)</a></section>
     <section><small>SHARE WITH SOMEONE</small><strong>“You have to see this.”</strong><p>Activating emotions and the intended recipient can shape what gets shared.</p><a href="${studies.sharing}">Berger &amp; Milkman (2012)</a></section>
     <section><small>MAKE ACTION POSSIBLE</small><strong>Give an interested person an easy next step.</strong><p>Put the prompt where the audience can act on it.</p><a href="${studies.action}">Fogg (2009)</a></section>
   </div>`,
-  'Workshop / Publish and record · 25 min': `<div class="visual execution-example">
+  'After feedback / Section 3-2': `<div class="visual execution-example">
     <h2>Night Routes · Example record</h2>
     <dl>
       <div><dt>Published</dt><dd>November 13 · 15:30 KST</dd></div>
@@ -153,7 +152,7 @@ const visuals = {
     </dl>
   </div>`,
   'Submission / November 19': `<details class="visual workshop-resources">
-    <summary>Research and additional cases</summary>
+    <summary>Research sources and more cases</summary>
     <div class="case-pair additional-cases">
       ${imageCase({
     url: 'https://newsroom.spotify.com/media-kit/2024-wrapped/',
