@@ -14,7 +14,10 @@ function render(focus = false) {
   const [title, lead, rows, note, prompt] = slide.content;
   const visual = visuals[slide.tag] || '';
   const link = slide.link ? `<a class="decklink" href="${slide.link[1]}" target="_blank" rel="noopener">${slide.link[0]} ↗</a>` : '';
-  $('deck').innerHTML = `<article class="${slide.theme || ''}${visual ? ' with-visual' : ''}"><div class="copy"><p class="eyebrow">${slide.tag}</p><h1 tabindex="-1">${title}</h1><p class="lead">${lead}</p>${prompt ? `<blockquote class="quote">${prompt}</blockquote>` : ''}${rows ? `<div class="rows">${rows.map(([k,v])=>`<div class="row"><strong>${k}</strong><span>${v}</span></div>`).join('')}</div>` : ''}${note ? `<p class="note">${note}</p>` : ''}${link}${index===0 ? `<button type="button" id="start">Start workshop →</button>` : ''}</div>${visual}</article>`;
+  const startButton = index === 0 && slide.showStartButton !== false
+    ? '<button type="button" id="start">Start workshop →</button>'
+    : '';
+  $('deck').innerHTML = `<article class="${slide.theme || ''}${visual ? ' with-visual' : ''}"><div class="copy"><p class="eyebrow">${slide.tag}</p><h1 tabindex="-1">${title}</h1><p class="lead">${lead}</p>${prompt ? `<blockquote class="quote">${prompt}</blockquote>` : ''}${rows ? `<div class="rows">${rows.map(([k,v])=>`<div class="row"><strong>${k}</strong><span>${v}</span></div>`).join('')}</div>` : ''}${note ? `<p class="note">${note}</p>` : ''}${link}${startButton}</div>${visual}</article>`;
   if ($('start')) $('start').onclick = () => go(1);
   $('prev').disabled = index === 0;
   $('next').disabled = index === slides.length-1;

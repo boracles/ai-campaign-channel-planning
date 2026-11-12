@@ -1,6 +1,5 @@
 const figJam = 'https://www.figma.com/board/VEX2J0NwnMC9NLmW6R6hR8/Media-Business---Startup?node-id=268-2';
 const week9Module = 'https://app.notion.com/p/AI-Campaign-Channel-Planning-3d57c00fe5ad81c18421f6ed85ebdea1';
-const week10Module = 'https://app.notion.com/p/Publish-on-Website-or-Social-Media-3d07c00fe5ad81b2b42ad63faa831950';
 const omegaTrailer = 'https://www.youtube.com/watch?v=sMwu6CwS0jI';
 const omegaVisit = 'https://meowwolf.com/visit/las-vegas';
 const dreamGarden = 'https://www.dstrict.com/COMMERCIAL/?bmode=view&idx=13263730';
@@ -21,7 +20,7 @@ const slides = [
   {
     tag: "Week 10 / November 13, 2026", theme: "launch-cover",
     content: ["From first look to first action", "Last week your team chose a promotion goal and a channel, then drafted a first post. Today each team presents its draft and plan, looks at campaign examples, publishes one post, and gets feedback."],
-    link: ["Open Week 10 · Publish on Website or Social Media", week10Module]
+    showStartButton: false
   },
   {
     tag: "01 / Team presentations", theme: "chalk",
