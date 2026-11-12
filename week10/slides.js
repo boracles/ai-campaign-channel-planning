@@ -55,7 +55,7 @@ const slides = [
   {
     tag: "02 / Team publishing", theme: "signal",
     content: ["Publish and share your post", "Publish your team’s promotional post on the website or social channel you chose in Week 9.", [
-      ["Share in FigJam", "Share the link to your published post in your team’s FigJam space."]
+      ["Share in FigJam", "During class, share the link to your published post in your team’s FigJam space."]
     ]],
     link: ["Open team FigJam", figJam]
   },
@@ -74,8 +74,8 @@ const slides = [
     ]]
   },
   {
-    tag: "Submission / November 19", theme: "signal",
-    content: ["Share your post link in FigJam", "Share the link to your team’s published post in FigJam by Thursday, November 19 at 23:59 KST."],
+    tag: "Submission / In class", theme: "signal",
+    content: ["Share your post link in FigJam", "Share the link to your team’s published post in your team’s FigJam space before class ends."],
     link: ["Open team FigJam", figJam]
   }
 ];
@@ -138,7 +138,7 @@ const visuals = {
     <section><small>WHAT THE TEAM MEANT</small><strong>“A map of sounds recorded at night.”</strong></section>
     <section><small>ONE CHANGE</small><strong>Play a market sound in the opening shot.</strong></section>
   </div>`,
-  'Submission / November 19': `<details class="visual workshop-resources">
+  'Submission / In class': `<details class="visual workshop-resources">
     <summary>Research sources and more cases</summary>
     <div class="case-pair additional-cases">
       ${imageCase({
