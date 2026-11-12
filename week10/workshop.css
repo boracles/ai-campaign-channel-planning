@@ -172,16 +172,16 @@
   .week10 .row, .sample-grid, .references-grid, .case-pair { grid-template-columns: 1fr; }
 }
 
-:root:fullscreen .week10 > :is(.topbar, .bottombar, .deck-progress) {
+:is(:root:fullscreen .week10, .week10.presentation-mode) > :is(.topbar, .bottombar, .deck-progress) {
   display: none;
 }
 
-:root:fullscreen .week10 > #deck {
+:is(:root:fullscreen .week10, .week10.presentation-mode) > #deck {
   max-width: none;
   padding-inline: 0;
 }
 
-:root:fullscreen .week10 article {
+:is(:root:fullscreen .week10, .week10.presentation-mode) article {
   min-height: 100vh;
   min-height: 100dvh;
   border: 0;

@@ -96,20 +96,44 @@ window.addEventListener('keydown',event=>{
 });
 const fullscreenButton = $('fullscreen');
 const fullscreenStatus = $('fullscreen-status');
-if (fullscreenButton && document.fullscreenEnabled && document.documentElement.requestFullscreen) {
+const supportsFullscreen = document.fullscreenEnabled && document.documentElement.requestFullscreen;
+const slideOnlyFullscreen = fullscreenButton?.hasAttribute('data-slide-only');
+
+function enterPresentationMode() {
+  fullscreenStatus.hidden = true;
+  document.body.classList.add('presentation-mode');
+  $('deck').querySelector('h1')?.focus({preventScroll:true});
+}
+
+if (fullscreenButton && (supportsFullscreen || slideOnlyFullscreen)) {
   fullscreenButton.hidden = false;
   fullscreenButton.addEventListener('click', async () => {
+    if (!supportsFullscreen) {
+      enterPresentationMode();
+      return;
+    }
     try {
       if (document.fullscreenElement) await document.exitFullscreen();
       else await document.documentElement.requestFullscreen();
       fullscreenStatus.hidden = true;
     } catch {
+      if (slideOnlyFullscreen && !document.fullscreenElement) {
+        enterPresentationMode();
+        return;
+      }
       fullscreenStatus.textContent = 'Full screen is unavailable here. Try your browser’s full-screen menu.';
       fullscreenStatus.hidden = false;
     }
   });
   document.addEventListener('fullscreenchange', () => {
     fullscreenButton.textContent = document.fullscreenElement ? 'Exit full screen' : 'Full screen';
+  });
+}
+if (slideOnlyFullscreen) {
+  window.addEventListener('keydown', event => {
+    if (event.key !== 'Escape' || !document.body.classList.contains('presentation-mode')) return;
+    document.body.classList.remove('presentation-mode');
+    fullscreenButton.focus({preventScroll:true});
   });
 }
 render();
