@@ -172,4 +172,17 @@
   .week10 .row, .sample-grid, .references-grid, .case-pair { grid-template-columns: 1fr; }
 }
 
-:fullscreen .week10 article, .week10:fullscreen article { min-height: calc(100dvh - 123px); }
+:root:fullscreen .week10 > :is(.topbar, .bottombar, .deck-progress) {
+  display: none;
+}
+
+:root:fullscreen .week10 > #deck {
+  max-width: none;
+  padding-inline: 0;
+}
+
+:root:fullscreen .week10 article {
+  min-height: 100vh;
+  min-height: 100dvh;
+  border: 0;
+}
