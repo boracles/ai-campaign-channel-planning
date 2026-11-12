@@ -177,3 +177,8 @@ h1[tabindex="-1"]:focus{outline:none}
 .three-outputs{grid-template-columns:repeat(3,minmax(0,1fr))}
 .three-outputs section>p:last-child{line-height:1.45;margin-bottom:.3rem}
 @media(max-width:800px){.three-outputs{grid-template-columns:1fr}}
+
+.week-link{white-space:nowrap}
+@media(max-width:600px){
+  .week-navigation .topbar{flex-wrap:wrap;justify-content:flex-start;column-gap:.85rem;row-gap:.55rem;padding-block:.6rem}
+}
