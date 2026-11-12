@@ -1,36 +1,168 @@
-.week10 .cover h1 {
-  font-size: clamp(3rem, 7vw, 6.8rem);
-  max-width: 14ch;
+.week10 {
+  --bg: #111210;
+  --ink: #f3f1e9;
+  --dim: #c5c6b7;
+  --accent: #e7fb68;
+  --line: #4b4c43;
+  font-family: "DM Sans", system-ui, sans-serif;
 }
 
-.week10 .cover .lead {
-  max-width: 42ch;
+.week10 .topbar { min-height: 59px; }
+.week10 .bottombar { min-height: 56px; }
+.week10 .brand b { border-color: var(--line); }
+.week10 button { background: #22231d; }
+.week10 .progress span { background: #e7fb68; }
+
+.week10 article {
+  --pad: clamp(24px, 4.5vw, 68px);
+  min-height: clamp(550px, calc(100svh - 124px), 820px);
+  background: #1b1d17;
 }
 
-.week10 .post-example > div + div {
-  margin-top: .85rem;
-}
-
-.week10 .post-example .draft-example > p:not(.output-kicker) {
-  margin: .42rem 0;
-  line-height: 1.45;
-}
-
-.week10 .post-example .published-example {
-  border-left: .35rem solid #adcf68;
-}
-
-.week10 .example-action {
-  color: #315123;
-  font-weight: 750;
-}
-
-.week10 .decklink {
+.week10 h1 {
+  font-family: "Barlow Condensed", "DM Sans", system-ui, sans-serif;
+  font-size: clamp(3.1rem, 6.7vw, 7rem);
   font-weight: 700;
+  letter-spacing: -.024em;
+  line-height: .91;
+  max-width: 16ch;
 }
 
-@media (max-width: 600px) {
-  .week10 .cover h1 {
-    font-size: clamp(2.75rem, 11.5vw, 4rem);
-  }
+.week10 article.with-visual { gap: clamp(22px, 3.6vw, 58px); }
+.week10 .with-visual h1 { font-size: clamp(2.9rem, 5.35vw, 5.6rem); }
+.week10 .lead { font-size: clamp(1.05rem, 1.6vw, 1.4rem); max-width: 52ch; }
+.week10 .eyebrow { letter-spacing: .095em; }
+.week10 .eyebrow::before { width: .8rem; }
+.week10 .rows { max-width: 860px; }
+.week10 .row { grid-template-columns: minmax(95px, .8fr) 2.25fr; }
+.week10 .row strong, .week10 .row span { font-size: clamp(.93rem, 1.24vw, 1.12rem); }
+.week10 .decklink { font-weight: 700; color: var(--accent); }
+
+.week10 .chalk {
+  background: #eeeddf;
+  color: #20251b;
+  --accent: #375014;
+  --dim: #48513d;
+  --line: #acb096;
 }
+
+.week10 .signal, .week10 .launch-cover {
+  background: #e7fb68;
+  color: #222617;
+  --accent: #303e0b;
+  --dim: #363e1d;
+  --line: #82913a;
+}
+
+.week10 .launch-cover h1 { font-size: clamp(4.15rem, 9.2vw, 10rem); }
+.week10 .launch-cover button { border-color: #222617; font-weight: 700; padding: .75rem 1.05rem; }
+.week10 .launch-mark {
+  position: relative;
+  display: grid;
+  min-height: clamp(240px, 34vw, 480px);
+  padding: clamp(20px, 3.5vw, 48px);
+  align-content: center;
+  justify-items: center;
+  background: #20241a;
+  color: #effe98;
+  overflow: hidden;
+  isolation: isolate;
+  transform: rotate(-3deg);
+  box-shadow: .65rem .65rem 0 #303e0b42;
+}
+
+.launch-grid {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-image: linear-gradient(90deg, #e7fb6817 1px, transparent 1px), linear-gradient(#e7fb6817 1px, transparent 1px);
+  background-size: 27px 27px;
+}
+
+.launch-mark span { font: 700 clamp(1rem, 2vw, 1.7rem) "Barlow Condensed", sans-serif; letter-spacing: .16em; }
+.launch-mark b { font: 600 clamp(4rem, 12vw, 11rem)/.96 "DM Sans", system-ui, sans-serif; }
+
+.schedule-grid, .audience-grid, .evidence-grid { display: grid; gap: .55rem; }
+.schedule-grid section { display: grid; grid-template-columns: minmax(75px, .55fr) 1.6fr; gap: .7rem; align-items: start; border-top: 1px solid var(--line); padding-top: .62rem; }
+.schedule-grid strong { color: var(--accent); font-weight: 700; }
+.schedule-grid p, .audience-grid p, .evidence-grid p { margin: 0 0 .36rem; line-height: 1.45; }
+.audience-grid section, .evidence-grid section { border-top: 1px solid var(--line); padding-top: .66rem; }
+.week10 .visual h2 { font-size: clamp(1.05rem, 1.85vw, 1.55rem); line-height: 1.12; margin: 0 0 .4rem; }
+.evidence-grid .evidence-limit { color: var(--dim); font-size: .89rem; }
+
+.media-preview { display: grid; position: relative; overflow: hidden; aspect-ratio: 16 / 9; background: #242824; }
+.media-preview img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.media-preview span {
+  align-self: center;
+  justify-self: center;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  background: #e7fb68;
+  color: #20241a;
+  font-size: 1.4rem;
+}
+.media-preview:hover span { background: #fff; }
+.contain-media .media-preview img { object-fit: contain; }
+.contain-media .media-preview { background: #d9dbc5; }
+.contain-media .media-preview span { align-self: end; justify-self: end; margin: .7rem; width: 2.75rem; height: 2.75rem; }
+.mars-stills img { display: block; width: 100%; aspect-ratio: 2.25; object-fit: cover; }
+.mars-stills img + img { margin-top: .45rem; }
+.mars-stills a { text-underline-offset: .2em; }
+
+.mechanism-grid, .mechanism-stack { display: grid; gap: .6rem; }
+.mechanism-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.mechanism-stack section, .mechanism-grid section { border: 1px solid var(--line); padding: clamp(.75rem, 1.5vw, 1.35rem); }
+.chalk .mechanism-stack section { background: #dedfc8; }
+.ink .mechanism-stack section, .ink .mechanism-grid section { background: #282c20; }
+.mechanism-stack small, .mechanism-grid small { display: block; margin-bottom: .3rem; color: var(--accent); font: 600 .7rem ui-monospace, monospace; letter-spacing: .05em; }
+.mechanism-stack strong, .mechanism-grid strong { display: block; font-size: clamp(1rem, 1.5vw, 1.34rem); line-height: 1.2; }
+.mechanism-stack p { margin: .4rem 0 0; color: var(--dim); }
+
+.storyboard { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .45rem; }
+.storyboard div { background: #d9dbc5; padding: .65rem; }
+.storyboard b { display: grid; place-items: center; margin-bottom: .65rem; height: clamp(2rem, 6vw, 5rem); background: #272e25; color: #e7fb68; font-size: 1.6rem; }
+.storyboard p { font-size: .9rem; margin: .35rem 0 0; }
+.storyboard figcaption { grid-column: 1 / -1; }
+
+.week10 article.comparison { display: flex; gap: 0; }
+.week10 .comparison .lead { max-width: 72ch; }
+.sample-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(12px, 2.2vw, 28px); }
+.campaign-sample { min-width: 0; padding: clamp(.8rem, 1.55vw, 1.4rem); background: #d9dbc5; color: #20251b; }
+.web-sample { background: #f9f8f0; border: 1px solid #acb096; }
+.campaign-sample p { font-size: clamp(.88rem, 1.1vw, 1.03rem); margin: .5rem 0; }
+.campaign-sample p.sample-eyebrow { font: 700 .69rem/1.3 ui-monospace, monospace; margin: 0 0 .65rem; }
+.campaign-sample .sample-action { font-weight: 700; margin-bottom: 0; }
+.sample-art { display: flex; align-items: center; justify-content: space-between; overflow: hidden; gap: .45rem; padding: .8rem; min-height: 73px; margin-bottom: .65rem; background: #272e25; color: #e7fb68; }
+.sample-art span { font: 800 1.45rem/.8 "Barlow Condensed", sans-serif; }
+.sample-art i { display: block; border: 1px solid #e7fb68; border-radius: 50%; width: 20px; height: 20px; box-shadow: 0 0 0 6px #e7fb6847, 0 0 0 12px #e7fb6825; }
+.sample-art i:nth-of-type(2) { transform: translateY(-10px); }
+.sample-art i:nth-of-type(3) { transform: translateY(12px); margin-right: 10%; }
+
+.execution-example { padding: clamp(1rem, 2.6vw, 2rem); background: #daddc6; }
+.execution-example dl { margin: .8rem 0 0; }
+.execution-example dl div { border-top: 1px solid #9fa787; display: grid; grid-template-columns: minmax(90px, .9fr) 1.5fr; gap: .5rem; padding: .5rem 0; }
+.execution-example dt { font-weight: 700; }
+.execution-example dd { margin: 0; }
+
+.week10 article.references { display: flex; gap: 0; }
+.references-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.4rem; }
+.references-grid section { border-top: 1px solid var(--line); padding-top: .8rem; }
+.references-grid ul { margin: .5rem 0 0; padding-left: 1.15rem; }
+.references-grid li { margin-bottom: .35rem; }
+.references-grid a { text-underline-offset: .18em; }
+
+@media (max-width: 800px) {
+  .week10 article, .week10 article.with-visual { min-height: 63svh; }
+  .week10 .launch-mark { min-height: 180px; }
+  .week10 .launch-cover h1 { font-size: clamp(3.85rem, 13vw, 6.5rem); }
+}
+
+@media (max-width: 550px) {
+  .week10 .row, .sample-grid, .references-grid { grid-template-columns: 1fr; }
+}
+
+:fullscreen .week10 article, .week10:fullscreen article { min-height: calc(100dvh - 123px); }
