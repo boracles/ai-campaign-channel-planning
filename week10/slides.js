@@ -56,17 +56,16 @@ const slides = [
     link: ["Open team FigJam", figJam]
   },
   {
-    tag: "03 / Team feedback", theme: "ink",
-    content: ["Give the post a headline", "Look at the first screen or first five seconds of another team’s post. The publishing team listens first.", [
-      ["Name it", "If you sent this to a friend, what one line would you use to describe it? Point to what gave you that impression."],
-      ["Compare", "The publishing team says what it wanted people to take away. Compare the two lines."],
-      ["One change", "The instructor points to one change in the wording, image or opening frame."]
+    tag: "03 / Individual feedback", theme: "ink",
+    content: ["Respond as a potential user", "Choose a project from another team that you would like to try, visit or learn more about.", [
+      ["Leave a response", "Write a short comment on the post or send a question through the project website. If neither is available, write next to the project’s post link in FigJam."],
+      ["Show the instructor", "Before you leave, show your posted comment, the inquiry confirmation or your FigJam response."]
     ]]
   },
   {
     tag: "Next class / November 20", theme: "chalk",
-    content: ["Bring two impressions to Week 11", "Keep one line about the impression your team intended and one line about how the other team read the post.", [
-      ["Next class", "Compare the two impressions with any available audience response, then revise the opening copy, main image or first screen."]
+    content: ["Review the responses you received", "Bring the comments and inquiries your team received. We’ll look at what people noticed and what they asked about.", [
+      ["Next class", "Use the responses to decide what to clarify in your opening copy, image or first screen."]
     ]]
   }
 ];
@@ -90,7 +89,7 @@ const visuals = {
     <section><strong>Present</strong><p>Show the draft and today’s promotion plan.</p></section>
     <section><strong>Look</strong><p>Watch the campaign examples before posting.</p></section>
     <section><strong>Publish</strong><p>Share your post link in FigJam.</p></section>
-    <section><strong>Compare</strong><p>Hear how another team reads your post.</p></section>
+    <section><strong>Respond</strong><p>Leave a response on a project that interests you.</p></section>
   </div>`,
   'Case 01 / Meow Wolf': `<div class="visual case-pair"><figure class="visual source-media">
     <a class="media-preview" href="${omegaTrailer}" target="_blank" rel="noopener" aria-label="Watch Meow Wolf’s 404 Chocolate commercial">
@@ -124,9 +123,7 @@ const visuals = {
     <section><small>SHARE WITH SOMEONE</small><strong>“You have to see this.”</strong><p>Activating emotions and the intended recipient can shape what gets shared.</p><a href="${studies.sharing}">Berger &amp; Milkman (2012)</a></section>
     <section><small>MAKE ACTION POSSIBLE</small><strong>Give an interested person an easy next step.</strong><p>Put the prompt where the audience can act on it.</p><a href="${studies.action}">Fogg (2009)</a></section>
   </div>`,
-  '03 / Team feedback': `<div class="visual mechanism-stack">
-    <section><small>WHAT THE OTHER TEAM SAW</small><strong>“A guide to places to visit at night.”</strong></section>
-    <section><small>WHAT THE TEAM MEANT</small><strong>“A map of sounds recorded at night.”</strong></section>
-    <section><small>ONE CHANGE</small><strong>Play a market sound in the opening shot.</strong></section>
+  '03 / Individual feedback': `<div class="visual mechanism-stack">
+    <section><small>EXAMPLE COMMENT</small><strong>“The opening made me want to try it. Where can I experience it?”</strong></section>
   </div>`
 };

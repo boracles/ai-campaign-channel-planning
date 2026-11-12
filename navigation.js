@@ -2,6 +2,15 @@ const $ = id => document.getElementById(id);
 const scriptPanel = $('speaker-script');
 const studentLink = $('open-student');
 let studentWindow;
+let presentationWindow;
+const presentationLauncher = $('fullscreen')?.hasAttribute('data-presentation-window');
+const isPresentation = presentationLauncher && window.opener && new URLSearchParams(location.search).get('view') === 'presentation';
+if (isPresentation) document.body.classList.add('presentation-mode');
+
+function linkedWindow() {
+  if (presentationLauncher) return isPresentation ? window.opener : presentationWindow;
+  return scriptPanel ? studentWindow : window.opener;
+}
 const slideHash = n => `#slide-${n+1}`;
 const fromHash = () => {
   const match = location.hash.match(/^#(?:slide|notes)-(\d+)$/);
@@ -44,7 +53,7 @@ function render(focus = false) {
   if (focus) document.querySelector('h1').focus({preventScroll:true});
 }
 function sendSlide() {
-  const other = scriptPanel ? studentWindow : window.opener;
+  const other = linkedWindow();
   if (other && !other.closed) {
     other.postMessage({type:'campaign-slide', index}, location.origin);
   }
@@ -75,8 +84,9 @@ window.addEventListener('hashchange',()=>{
   sendSlide();
 });
 window.addEventListener('message', event => {
-  const other = scriptPanel ? studentWindow : window.opener;
+  const other = linkedWindow();
   if (event.origin !== location.origin || !other || event.source !== other) return;
+  if (presentationLauncher && !isPresentation && event.data?.type === 'campaign-presentation-ready') sendSlide();
   if (event.data?.type === 'campaign-slide' && Number.isInteger(event.data.index)) go(event.data.index, false);
 });
 if (studentLink) {
@@ -96,31 +106,44 @@ window.addEventListener('keydown',event=>{
 });
 const fullscreenButton = $('fullscreen');
 const fullscreenStatus = $('fullscreen-status');
-const supportsFullscreen = document.fullscreenEnabled && document.documentElement.requestFullscreen;
-const slideOnlyFullscreen = fullscreenButton?.hasAttribute('data-slide-only');
 
-function enterPresentationMode() {
-  fullscreenStatus.hidden = true;
-  document.body.classList.add('presentation-mode');
-  $('deck').querySelector('h1')?.focus({preventScroll:true});
-}
-
-if (fullscreenButton && (supportsFullscreen || slideOnlyFullscreen)) {
+if (isPresentation) {
+  window.addEventListener('keydown', async event => {
+    if (event.altKey || event.ctrlKey || event.metaKey) return;
+    if (event.key === 'Escape' && !document.fullscreenElement) window.close();
+    if (event.key.toLowerCase() !== 'f' || !document.fullscreenEnabled) return;
+    try {
+      if (document.fullscreenElement) await document.exitFullscreen();
+      else await document.documentElement.requestFullscreen();
+    } catch {
+      // The slide remains available at the popup's current size.
+    }
+  });
+} else if (presentationLauncher) {
   fullscreenButton.hidden = false;
-  fullscreenButton.addEventListener('click', async () => {
-    if (!supportsFullscreen) {
-      enterPresentationMode();
+  fullscreenButton.addEventListener('click', () => {
+    const url = new URL(location.href);
+    url.searchParams.set('view', 'presentation');
+    url.hash = slideHash(index);
+    const features = `popup,width=${screen.availWidth},height=${screen.availHeight},left=${screen.availLeft ?? 0},top=${screen.availTop ?? 0}`;
+    const popup = window.open(url, 'campaign-week10-presentation', features);
+    if (!popup) {
+      fullscreenStatus.textContent = 'Allow pop-ups for this site to open the presentation window.';
+      fullscreenStatus.hidden = false;
       return;
     }
+    presentationWindow = popup;
+    fullscreenStatus.hidden = true;
+    presentationWindow.focus();
+  });
+} else if (fullscreenButton && document.fullscreenEnabled && document.documentElement.requestFullscreen) {
+  fullscreenButton.hidden = false;
+  fullscreenButton.addEventListener('click', async () => {
     try {
       if (document.fullscreenElement) await document.exitFullscreen();
       else await document.documentElement.requestFullscreen();
       fullscreenStatus.hidden = true;
     } catch {
-      if (slideOnlyFullscreen && !document.fullscreenElement) {
-        enterPresentationMode();
-        return;
-      }
       fullscreenStatus.textContent = 'Full screen is unavailable here. Try your browser’s full-screen menu.';
       fullscreenStatus.hidden = false;
     }
@@ -129,11 +152,5 @@ if (fullscreenButton && (supportsFullscreen || slideOnlyFullscreen)) {
     fullscreenButton.textContent = document.fullscreenElement ? 'Exit full screen' : 'Full screen';
   });
 }
-if (slideOnlyFullscreen) {
-  window.addEventListener('keydown', event => {
-    if (event.key !== 'Escape' || !document.body.classList.contains('presentation-mode')) return;
-    document.body.classList.remove('presentation-mode');
-    fullscreenButton.focus({preventScroll:true});
-  });
-}
 render();
+if (isPresentation) window.opener.postMessage({type:'campaign-presentation-ready'}, location.origin);
