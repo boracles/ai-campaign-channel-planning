@@ -1,4 +1,5 @@
 const figJam = 'https://www.figma.com/board/VEX2J0NwnMC9NLmW6R6hR8/Media-Business---Startup?node-id=268-2';
+const week9Module = 'https://app.notion.com/p/AI-Campaign-Channel-Planning-3d57c00fe5ad81c18421f6ed85ebdea1';
 const omegaTrailer = 'https://www.youtube.com/watch?v=sMwu6CwS0jI';
 const omegaVisit = 'https://meowwolf.com/visit/las-vegas';
 const dreamGarden = 'https://www.dstrict.com/COMMERCIAL/?bmode=view&idx=13263730';
@@ -18,19 +19,20 @@ const studies = {
 const slides = [
   {
     tag: "Week 10 / November 13, 2026", theme: "launch-cover",
-    content: ["From first look to first action", "What makes someone stop, look closer and take the next step? Today your team will revise and publish one post."]
+    content: ["From first look to first action", "Last week your team chose a promotion goal and a channel, then drafted a first post. Today you’ll show what you developed, refine the draft and publish it."]
   },
   {
     tag: "Individual presentations / 30 min", theme: "chalk",
-    content: ["Show what you developed last time", "Everyone presents their own work from Week 9. Keep it to 30–45 seconds each.", [
-      ["Show","Open the draft, visual, or other piece you developed."],
-      ["Explain","What changed, and why did you change it?"]
+    content: ["Show what you developed last time", "Open your team’s Week 9 work. Each person shows their contribution in 30–45 seconds.", [
+      ["Promotion goal", "Who did your team want to reach, and what did you want them to know?"],
+      ["Promotion channel", "Which website or social channel did you choose?"],
+      ["First post draft", "Show the copy, image or short clip you helped develop. What did you change, and why?"]
     ]],
-    link: ["Open team FigJam", figJam]
+    link: ["Open Week 9 · AI Campaign &amp; Channel Planning", week9Module]
   },
   {
     tag: "Case / Meow Wolf", theme: "ink comparison",
-    content: ["One campaign, two jobs", "Watch the first 25 seconds of the 404 Chocolate commercial, then open the visit page. What does each make you want or able to do?"]
+    content: ["One campaign, two jobs", "Watch the first 25 seconds of the 404 Chocolate commercial, then open the visit page. What does each channel help the audience discover or do?"]
   },
   {
     tag: "Case / Apple TV", theme: "ink media-case",
@@ -54,15 +56,15 @@ const slides = [
   },
   {
     tag: "Team workshop / 55 min", theme: "signal",
-    content: ["Revise and test one post", "Pick one idea from a case and adapt it to your team’s Week 9 work.", [
-      ["35 min · Revise","Choose who it’s for and where you’ll post it. Show a sample and give the audience one thing to do."],
-      ["20 min · Test","Show another team the preview for five seconds. Ask what they think it is and what they would do next. Fix one point of confusion."]
+    content: ["Revise and test one post", "Take one idea from a case and use it to improve the draft your team presented.", [
+      ["35 min · Revise", "Use your Week 9 promotion goal and channel to revise the copy, image or clip. Give the audience one clear next step."],
+      ["20 min · Test", "Show another team the preview for five seconds. Ask what they learned and what they would do next. Fix one point of confusion."]
     ]],
     link: ["Open team FigJam", figJam]
   },
   {
     tag: "Workshop / Publish and record · 25 min", theme: "chalk",
-    content: ["Publish, verify and record", "Use a project site or a team channel your intended audience can access. Personal accounts are optional.", [
+    content: ["Publish, verify and record", "Publish one team post on the website or social channel you chose. Personal accounts are optional.", [
       ["Before","Check the media permissions, the people shown and who can see the post."],
       ["After","Ask another teammate to open the direct link and try the next step. Log the post in section 3-2."]
     ]]
