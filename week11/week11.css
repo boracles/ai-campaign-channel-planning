@@ -85,3 +85,83 @@
     max-height: 55vh;
   }
 }
+
+.week11 .worksheet-demo.with-visual {
+  display: flex;
+  align-items: stretch;
+  gap: 1.25rem;
+  justify-content: center;
+}
+
+.week11 .worksheet-demo h1 {
+  max-width: none;
+  font-size: clamp(2.95rem, 5vw, 5.25rem);
+}
+
+.week11 .worksheet-demo .lead {
+  max-width: 68ch;
+  margin-bottom: 0;
+}
+
+.week11 .worksheet-grid {
+  display: grid;
+  grid-template-columns: 1.18fr 1fr 1fr;
+  gap: clamp(0.7rem, 1.4vw, 1.1rem);
+  align-items: start;
+}
+
+.week11 .worksheet-region {
+  padding: clamp(0.9rem, 1.5vw, 1.35rem);
+  border: 1px solid #adb8aa;
+  border-radius: 0.45rem;
+  min-width: 0;
+  color: #242826;
+}
+
+.week11 .worksheet-evidence { background: #edf7ff; }
+.week11 .worksheet-mockup { background: #f2edfc; }
+.week11 .worksheet-share { background: #fff7e4; }
+
+.week11 .worksheet-region h2 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.16rem, 2vw, 1.6rem);
+}
+
+.week11 .worksheet-region h3 {
+  margin: 0.95rem 0 0.22rem;
+  font-size: 1rem;
+}
+
+.week11 .worksheet-region dl,
+.week11 .worksheet-region dd,
+.week11 .worksheet-region p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.week11 .worksheet-region dt {
+  margin-top: 0.5rem;
+  font-size: 0.93rem;
+  font-weight: 700;
+}
+
+.week11 .worksheet-peer,
+.week11 .worksheet-version {
+  margin-block: 0.85rem;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid #bdc8bc;
+  border-radius: 0.28rem;
+  background: #fffdf7;
+}
+
+.week11 .worksheet-peer p,
+.week11 .worksheet-version p {
+  margin-top: 0.22rem;
+}
+
+@media (max-width: 850px) {
+  .week11 .worksheet-grid {
+    grid-template-columns: 1fr;
+  }
+}
