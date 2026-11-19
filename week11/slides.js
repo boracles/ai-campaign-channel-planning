@@ -123,7 +123,7 @@ const slides = [
     "showStartButton": false
   },
   {
-    "tag": "Team presentations / Two minutes each",
+    "tag": "Team presentations / Five minutes each",
     "theme": "signal",
     "content": [
       "Show the result and the change",
