@@ -4,7 +4,7 @@ const slides = [
     "theme": "launch-cover week11-cover",
     "content": [
       "Campaign response &amp; brand message",
-      "Compare your campaign goal with its first seven days. Use what you learn to make one branding decision.",
+      "Compare your campaign goal with its first seven days. Use what you learn to decide how to present your project.",
       null,
       null
     ],
@@ -111,8 +111,8 @@ const slides = [
     "tag": "Team activity / Brand decision",
     "theme": "chalk",
     "content": [
-      "Make one brand change",
-      "Choose the change your evidence supports. Set the original beside the new version in FigJam.",
+      "Revise how you present your project",
+      "Use your campaign results and feedback to decide what to revise. Set the original beside the new version in FigJam.",
       [
         [
           "The offer was unclear",
@@ -120,7 +120,7 @@ const slides = [
         ],
         [
           "The experience was hard to picture",
-          "Show one person doing something and what happens next."
+          "Show what visitors do and what happens next."
         ],
         [
           "People understood it",
@@ -158,8 +158,81 @@ const slides = [
 ];
 
 const visuals = {
-  "Case study / Sonic the Hedgehog": "<figure class=\"visual case-figure\"><img class=\"case-image\" src=\"https://s.abcnews.com/images/US/sonic-the-hedgehog-old-new-comparison-ht-jc-191112_hpEmbed_11x9_992.jpg\" alt=\"Paramount trailer stills. The revised Sonic is above the original.\"><div class=\"case-figures\"><div><strong>45%</strong><span>First trailer</span></div><div><strong>99%</strong><span>Revised trailer</span></div></div><figcaption>Approximate share of recorded likes and dislikes that were likes. Counts from <a href=\"https://www.cartoonbrew.com/feature-film/the-new-sonic-the-hedgehog-trailer-doesnt-get-the-reaction-paramount-hoped-for-173426.html\" target=\"_blank\" rel=\"noopener noreferrer\">Cartoon Brew</a> and <a href=\"https://www.1news.co.nz/2019/11/13/updated-sonic-the-hedgehog-revealed-in-movie-trailer-after-fan-backlash-led-to-redesign/\" target=\"_blank\" rel=\"noopener noreferrer\">1News</a>. Still comparison via <a href=\"https://abcnews.com/entertainment/fans-fawn-updated-sonic-hedgehog-character-design/story?id=66940796\" target=\"_blank\" rel=\"noopener noreferrer\">ABC News</a>.</figcaption></figure>",
-  "Case study / Moving to Mars": "<figure class=\"visual case-figure\"><img class=\"case-image\" src=\"https://designmuseum.org/image/65e12f50-1320-4422-a53c-b4601fddbeaa?height=480&amp;width=900\" alt=\"Final-week Moving to Mars campaign artwork\"><div class=\"case-figures\"><div><strong>38%</strong><span>Admission income from families</span></div><div><strong>&lt;3%</strong><span>Museum exhibition average</span></div></div><figcaption>The museum’s reported family share for the exhibition. <a href=\"https://designmuseum.org/moving-to-mars\" target=\"_blank\" rel=\"noopener noreferrer\">Campaign report</a> and <a href=\"https://designmuseum.org/exhibitions/moving-to-mars/your-mission-starts-here\" target=\"_blank\" rel=\"noopener noreferrer\">Family Trail</a>.</figcaption></figure>",
-  "Team activity / Seven-day review": "<div class=\"visual evidence-sheet\"><h2>Campaign results</h2><dl><dt>Post or website</dt><dd>What did you check?</dd><dt>Date range</dt><dd>Which seven days did you measure?</dd><dt>Goal and metric</dt><dd>What action did you want? Include the unit.</dd><dt>Target and actual</dt><dd>Write both. Did you reach the goal?</dd><dt>How you checked</dt><dd>Name the report, filter or manual count.</dd></dl></div>",
-  "Team activity / FigJam example": "<div class=\"visual worksheet-grid\" aria-label=\"Example of the three team worksheet panels\">\n  <section class=\"worksheet-region worksheet-evidence\">\n    <h2>Campaign goal &amp; results</h2>\n    <dl>\n      <dt>Post or website</dt><dd>Studio website’s contact form</dd>\n      <dt>Dates checked</dt><dd>November 13–19</dd>\n      <dt>Goal and metric</dt><dd>Inquiries from potential clients (count)</dd>\n      <dt>Target / Actual</dt><dd>5 inquiries / 2 inquiries</dd>\n      <dt>How we checked</dt><dd>Counted new client inquiries in the form inbox for those dates.</dd>\n      <dt>What the result tells us</dt><dd>We were 3 inquiries short of the goal.</dd>\n    </dl>\n    <div class=\"worksheet-peer\"><strong>Classmate feedback</strong><p>“I can’t picture what visitors actually do.”</p></div>\n  </section>\n  <section class=\"worksheet-region worksheet-mockup\">\n    <h2>Brand mockup</h2>\n    <div class=\"worksheet-version\"><strong>Before</strong><p>“Immersive experiences for your brand.”</p></div>\n    <div class=\"worksheet-version\"><strong>After</strong><p>“Visitors choose a scene and see the room change.”</p></div>\n    <p>Put your original and revised copy, images or storyboard side by side.</p>\n  </section>\n  <section class=\"worksheet-region worksheet-share\">\n    <h2>Get ready to present</h2>\n    <h3>What changed and why?</h3>\n    <p>We showed what visitors do so organizers can picture an exhibition they could commission.</p>\n    <h3>Where we’ll reuse it</h3>\n    <p>The website project card and LinkedIn introduction.</p>\n    <h3>What to show in five minutes</h3>\n    <p>Your result, how you checked it, and why the new version responds to the feedback.</p>\n  </section>\n</div>"
+  "Case study / Sonic the Hedgehog": "<figure class=\"visual case-figure\"><div class=\"case-media-frame\"><img class=\"case-image\" src=\"https://s.abcnews.com/images/US/sonic-the-hedgehog-old-new-comparison-ht-jc-191112_hpEmbed_11x9_992.jpg\" alt=\"Paramount trailer stills. The revised Sonic is above the original.\"></div><div class=\"case-media-controls\" aria-label=\"Case study media\"><button type=\"button\" data-week11-media=\"sonic-stills\" aria-pressed=\"true\" >Design comparison</button><button type=\"button\" data-week11-media=\"sonic-april\" aria-pressed=\"false\" >April trailer</button><button type=\"button\" data-week11-media=\"sonic-november\" aria-pressed=\"false\" >November trailer</button></div><p class=\"media-fallback\" hidden></p><div class=\"case-figures\"><div><strong>45%</strong><span>First trailer</span></div><div><strong>99%</strong><span>Revised trailer</span></div></div><figcaption>Approximate share of recorded likes and dislikes that were likes. Counts from <a href=\"https://www.cartoonbrew.com/feature-film/the-new-sonic-the-hedgehog-trailer-doesnt-get-the-reaction-paramount-hoped-for-173426.html\" target=\"_blank\" rel=\"noopener noreferrer\">Cartoon Brew</a> and <a href=\"https://www.1news.co.nz/2019/11/13/updated-sonic-the-hedgehog-revealed-in-movie-trailer-after-fan-backlash-led-to-redesign/\" target=\"_blank\" rel=\"noopener noreferrer\">1News</a>. Still comparison via <a href=\"https://abcnews.com/entertainment/fans-fawn-updated-sonic-hedgehog-character-design/story?id=66940796\" target=\"_blank\" rel=\"noopener noreferrer\">ABC News</a>.</figcaption></figure>",
+  "Case study / Moving to Mars": "<figure class=\"visual case-figure\"><div class=\"case-media-frame\"><img class=\"case-image\" src=\"https://designmuseum.org/image/65e12f50-1320-4422-a53c-b4601fddbeaa?height=480&amp;width=900\" alt=\"Final-week Moving to Mars campaign artwork\"></div><div class=\"case-media-controls\" aria-label=\"Case study media\"><button type=\"button\" data-week11-media=\"mars-ad\" aria-pressed=\"true\" >Final-week ad</button><button type=\"button\" data-week11-media=\"mars-trail\" aria-pressed=\"false\" >Family Trail</button><button type=\"button\" data-week11-media=\"mars-trailer\" aria-pressed=\"false\" >Exhibition trailer</button></div><p class=\"media-fallback\" hidden></p><div class=\"case-figures\"><div><strong>38%</strong><span>Admission income from families</span></div><div><strong>&lt;3%</strong><span>Museum exhibition average</span></div></div><figcaption>The museum’s reported family share for the exhibition. <a href=\"https://designmuseum.org/moving-to-mars\" target=\"_blank\" rel=\"noopener noreferrer\">Campaign report</a> and <a href=\"https://designmuseum.org/exhibitions/moving-to-mars/your-mission-starts-here\" target=\"_blank\" rel=\"noopener noreferrer\">Family Trail</a>.</figcaption></figure>",
+  "Team activity / Seven-day review": "<figure class=\"visual worksheet-figure\"><img src=\"media/figjam-results-form.png\" alt=\"Blank seven-day campaign results panel from the class FigJam\"><figcaption>FigJam · Fill in the dates, metric, goal, result and how you checked it.</figcaption></figure>",
+  "Team activity / FigJam example": "<div class=\"visual worksheet-grid\" aria-label=\"Example of the three team worksheet panels\">\n  <section class=\"worksheet-region worksheet-evidence\">\n    <h2>Campaign goal &amp; results</h2>\n    <dl>\n      <dt>Post or website</dt><dd>Studio website’s contact form</dd>\n      <dt>Dates checked</dt><dd>November 13–19</dd>\n      <dt>Goal and metric</dt><dd>Inquiries from potential clients (count)</dd>\n      <dt>Target / Actual</dt><dd>5 inquiries / 2 inquiries</dd>\n      <dt>How we checked</dt><dd>Counted new client inquiries in the form inbox for those dates.</dd>\n      <dt>What the result tells us</dt><dd>We were 3 inquiries short of the goal.</dd>\n    </dl>\n    <div class=\"worksheet-peer\"><strong>Classmate feedback</strong><p>“I can’t picture what visitors actually do.”</p></div>\n  </section>\n  <section class=\"worksheet-region worksheet-mockup\">\n    <h2>Brand mockup</h2>\n    <div class=\"worksheet-version\"><strong>Before</strong><p>“Immersive experiences for your brand.”</p></div>\n    <div class=\"worksheet-version\"><strong>After</strong><p>“Visitors choose a scene and see the room change.”</p></div>\n    <p>Put your original and revised copy, images or storyboard side by side.</p>\n  </section>\n  <section class=\"worksheet-region worksheet-share\">\n    <h2>Get ready to present</h2>\n    <h3>What changed and why?</h3>\n    <p>We showed what visitors do so organizers can picture an exhibition they could commission.</p>\n    <h3>Where we’ll reuse it</h3>\n    <p>The website project card and LinkedIn introduction.</p>\n    <h3>What to show in five minutes</h3>\n    <p>Your result, how you checked it, and why the new version responds to the feedback.</p>\n  </section>\n</div>",
+  "Team activity / Measurement": "<figure class=\"visual worksheet-figure\"><img src=\"https://framerusercontent.com/images/20QO5ItFBgSAO1R0CCKXfVT2T4.png?height=1264&amp;width=1192\" alt=\"Framer Analytics dashboard showing a page filter and website metrics\"><figcaption>Example report from <a href=\"https://www.framer.com/analytics\" target=\"_blank\" rel=\"noopener noreferrer\">Framer Analytics</a>. Record the date range and filters used in your own report.</figcaption></figure>"
 };
+
+const caseMedia = {
+  "sonic-stills": {
+    "type": "image",
+    "src": "https://s.abcnews.com/images/US/sonic-the-hedgehog-old-new-comparison-ht-jc-191112_hpEmbed_11x9_992.jpg",
+    "title": "Paramount trailer stills. Revised Sonic above the original."
+  },
+  "sonic-april": {
+    "type": "video",
+    "src": "https://www.youtube-nocookie.com/embed/-QHKFPD9iRE",
+    "link": "https://www.youtube.com/watch?v=-QHKFPD9iRE",
+    "title": "Sonic the Hedgehog · April 2019 trailer"
+  },
+  "sonic-november": {
+    "type": "video",
+    "src": "https://www.youtube-nocookie.com/embed/sC_YlhYh844",
+    "link": "https://www.youtube.com/watch?v=sC_YlhYh844",
+    "title": "Sonic the Hedgehog · November 2019 trailer"
+  },
+  "mars-ad": {
+    "type": "image",
+    "src": "https://designmuseum.org/image/65e12f50-1320-4422-a53c-b4601fddbeaa?height=480&width=900",
+    "title": "Final-week Moving to Mars campaign artwork"
+  },
+  "mars-trail": {
+    "type": "image",
+    "src": "https://designmuseum.org/image/fe73f407-315a-4289-9ba7-d4c3adeb41f6?height=480&width=900",
+    "title": "Moving to Mars Family Trail campaign from the Design Museum"
+  },
+  "mars-trailer": {
+    "type": "video",
+    "src": "https://player.vimeo.com/video/367973113?dnt=1",
+    "link": "https://vimeo.com/367973113",
+    "title": "Moving to Mars · Design Museum exhibition trailer"
+  }
+};
+
+document.addEventListener('click', event => {
+  const button = event.target.closest('[data-week11-media]');
+  const choice = caseMedia[button?.dataset.week11Media];
+  const panel = button?.closest('.case-figure');
+  if (!choice || !panel || button.getAttribute('aria-pressed') === 'true') return;
+
+  const frame = panel.querySelector('.case-media-frame');
+  const fallback = panel.querySelector('.media-fallback');
+  panel.querySelectorAll('[data-week11-media]').forEach(control => {
+    control.setAttribute('aria-pressed', String(control === button));
+  });
+  if (choice.type === 'image') {
+    const image = document.createElement('img');
+    image.className = 'case-image';
+    image.src = choice.src;
+    image.alt = choice.title;
+    frame.replaceChildren(image);
+    fallback.hidden = true;
+    return;
+  }
+  const player = document.createElement('iframe');
+  player.src = choice.src;
+  player.title = choice.title;
+  player.allow = 'encrypted-media; picture-in-picture; fullscreen';
+  player.allowFullscreen = true;
+  frame.replaceChildren(player);
+
+  const source = document.createElement('a');
+  source.href = choice.link;
+  source.target = '_blank';
+  source.rel = 'noopener noreferrer';
+  source.textContent = 'Open video on the source site';
+  fallback.replaceChildren(source);
+  fallback.hidden = false;
+});
