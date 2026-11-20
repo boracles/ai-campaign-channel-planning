@@ -2,17 +2,18 @@
   const params = new URLSearchParams(location.search);
   const session = params.get('presenter');
   const presenter = window.opener;
+  const presenterOrigin = params.get('host') === 'private' ? 'https://boracles-week11-presenter.borapado.chatgpt.site' : 'null';
   if (params.get('view') !== 'presentation' || !presenter || !/^[a-f0-9]{32}$/.test(session || '')) return;
 
   const channel = 'week11-presenter-v1';
   const counter = document.getElementById('counter');
   const readIndex = () => Number(counter.textContent.split('/')[0].trim()) - 1;
-  const send = type => presenter.postMessage({ channel, type, session, index: readIndex() }, '*');
+  const send = type => presenter.postMessage({ channel, type, session, index: readIndex() }, presenterOrigin === 'null' ? '*' : presenterOrigin);
   let lastIndex = readIndex();
 
   window.addEventListener('message', event => {
     const data = event.data;
-    if (event.source !== presenter || event.origin !== 'null' ||
+    if (event.source !== presenter || event.origin !== presenterOrigin ||
         data?.channel !== channel || data.type !== 'set-slide' || data.session !== session ||
         !Number.isInteger(data.index) || data.index < 0 || data.index >= slides.length) return;
     if (readIndex() !== data.index) location.hash = `slide-${data.index + 1}`;
