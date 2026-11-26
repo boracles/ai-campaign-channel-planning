@@ -1,62 +1,198 @@
-const PEN = 'https://www.cooperhewitt.org/new-experience/designing-pen/';
-const PEN_USE = 'https://www.cooperhewitt.org/2015/03/05/using-the-pen/';
-const PEN_LABS = 'https://labs.cooperhewitt.org/2016/museums-and-the-web-conference-recap-administrative-tools-at-cooper-hewitt/';
-const CLEAN = 'https://www.ideo.org/project/clean-team';
-const NOTIFY = 'https://userresearch.blog.gov.uk/2018/06/12/how-were-using-contextual-research-to-improve-gov-uk-notify/';
-const AIRBNB = 'https://review.firstround.com/how-design-thinking-transformed-airbnb-from-failing-startup-to-billion-dollar-business/';
-const IDEO_FIELD = 'https://www.ideo.com/journal/a-day-in-the-life-of-a-design-researcher';
-const sourceLink = (url, label) => `<a href="${url}" target="_blank" rel="noopener noreferrer">${label}</a>`;
-const image = (file, alt, caption, url, cls = '') => `<figure class="visual field-photo ${cls}"><button type="button" class="image-open" data-image="media/${file}" data-alt="${alt}" data-credit="${caption}" aria-label="Enlarge: ${alt}"><img src="media/${file}" alt="${alt}"></button><figcaption>${caption} ${sourceLink(url, 'Source')}</figcaption></figure>`;
-const cards = rows => `<div class="visual concept-board">${rows.map(([title, copy])=>`<section><h2>${title}</h2><p>${copy}</p></section>`).join('')}</div>`;
+// Documented field-research applications: one case per slide.
 const slides = [
-  {tag:'Today / Review, understand, plan',theme:'field-cover',showStartButton:false,content:['Field research for business','Why businesses go into the field—and what they change afterward.',[
-    ['Present','Campaign and branding revisions.'],['Explore','Real visits, findings and business decisions.'],['Plan','Your team’s field research.']], 'Next week: fieldwork during class. No separate submission.'],ko:'홍보·브랜딩 개선 발표 후 기업의 실제 조사와 개선 사례를 살펴봅니다. 이번 시간에는 조사 계획을 세우고 다음 주 수업 시간에 현장조사를 수행합니다.'},
-  {tag:'Presentations / Campaign and branding',content:['Show what you changed.','Start with the work you revised after reviewing the first week of promotion.',[
-    ['Show both versions','Put the original and revised promotion or branding side by side.'],['Explain the reason','Connect the change to actual comments, enquiries, behaviour or campaign results.'],['Identify the next question','What do you still need to understand about the audience, client or service?']], 'Label classmate comments as classmate feedback. Use your actual campaign results.'],ko:'기존 시안과 수정 시안을 함께 보여주고, 어떤 반응 때문에 무엇을 바꿨는지 설명합니다. 수업 동료 의견과 실제 고객·관객의 반응은 구분해 설명합니다.'},
-  {tag:'Purpose / The role of field research',content:['When do businesses go into the field?','Research starts with a decision the business cannot yet make confidently.',[
-    ['Before launch','What offer fits people’s lives? Clean Team investigated household sanitation.'],['When growth stalls','What prevents people from buying? Airbnb visited its New York hosts in 2009.'],['During operation','What makes real work difficult? Notify observed staff using the live service.']], 'The purpose determines whom to meet, where to go and what to investigate.'],ko:'출시 전에는 제공할 서비스를 정하기 위해, 성장 정체 시에는 구매를 막는 문제를 찾기 위해, 운영 중에는 실제 이용의 어려움을 개선하기 위해 조사합니다.'},
-  {tag:'Method / What counts as field research?',content:['Go where the activity happens.','Observe an actual setting, speak with the people involved, or work through the service with them.',[
-    ['Observe','Follow participation, movement, tools and staff actions in context.'],['Ask','Clarify what you see; ask clients or venue staff about their requirements.'],['Try and document','Scout a filming location or try the steps of a client consultation.']], 'A website can identify a reference. First-hand work helps you understand the conditions behind it.'],ko:'관찰, 담당자와의 대화, 촬영지 답사, 의뢰 상담 실습 등이 포함됩니다. 무엇을 알아야 하는지에 맞춰 방법을 정합니다.'},
-  {tag:'Real case / Cooper Hewitt',content:['Cooper Hewitt: the visitor experience.','Cooper Hewitt used the Pen in its galleries from 2015 to 2020. Visitors collected objects and drew on interactive tables.',[
-    ['Watch the instructions','Notice the actions expected of a visitor, from collecting to returning the Pen.'],['Look beyond the device','The experience also depended on tickets, staff, tables and a post-visit website.']], 'Watch: official museum animation, 39 seconds. Then discuss which parts require staff or venue support.'],link:['Museum account of the design process',PEN],ko:'펜 한 개의 디자인뿐 아니라 티켓, 안내, 테이블, 반납, 방문 후 웹사이트까지 연결된 경험입니다. 영상에서 관객의 행동과 운영자의 일을 함께 찾아봅니다.'},
-  {tag:'Real case / Testing operations',content:['Test the delivery before opening.','Cooper Hewitt tested the Pen’s operational logistics before rolling out the museum experience.',[
-    ['Why','A device needs to fit ticketing, visitor guidance and return.'],['In the setting','The museum worked through Pen distribution and ticket pairing around front-desk duties.'],['Changed','A dedicated pairing station and administrative tools supported staff delivery.']], 'Business decision: include onboarding tools and staff tasks in the installation offer.'],link:['Museum team’s account',PEN_LABS],ko:'개관 전 운영 과정을 시험하면서 펜 배포·티켓 연결을 안내 업무와 함께 처리할 도구를 만들었습니다. 기술 시안과 별개로 실제 현장에서 제공할 운영 지원을 정하는 과정입니다.'},
-  {tag:'Real case / Airbnb',content:['When growth stalled: visit the hosts.','In 2009, Airbnb’s founders were trying to understand weak booking growth in New York.',[
-    ['Starting clue','Reviewing listings showed that rooms were difficult to judge from poor photos.'],['Fieldwork','The founders travelled to hosts, spent time with them and photographed the properties.'],['Changed','The team replaced poor listing photos with clearer images.'],['Reported result','Weekly revenue rose from $200 to $400 after the visits.']], 'Reported by co-founder Joe Gebbia; the account does not isolate the effect of photos from the visits.'],link:['Joe Gebbia’s firsthand account',AIRBNB],ko:'온라인 목록에서 사진 문제를 발견한 뒤 뉴욕 호스트를 직접 만나 숙소를 촬영했습니다. 바뀐 것은 고객이 예약 전에 숙소를 판단하는 정보였습니다. 매출 개선은 창업자의 회고이며 사진만의 효과를 분리한 실험은 아닙니다.'},
-  {tag:'Real case / IDEO.org and Clean Team',content:['Before launch: define the whole offer.','Unilever and WSUP worked with IDEO.org before Clean Team launched in Kumasi, Ghana, in 2012.',[
-    ['Why investigate?','A household toilet would still leave families responsible for waste disposal.'],['Fieldwork','The team investigated public-toilet queues, household routines and waste handling.'],['Finding → decision','Residents did not want to carry waste through their homes. The offer included collection and maintenance.']], 'The partners piloted the service with about 100 families before launch.'],link:['IDEO.org’s project account',CLEAN],ko:'출시 전에 생활 속 위생 환경과 폐기물 처리 부담을 조사했습니다. 주민이 집 안에서 오물을 옮기고 싶어 하지 않는다는 발견이 수거·유지관리까지 포함하는 서비스와 출시 전 가구 대상 파일럿으로 이어졌습니다.'},
-  {tag:'Real case / The business behind the product',content:['Clean Team: the service system.','The final offer included the full route from household collection to waste treatment.',[
-    ['Customer offer','A toilet with collection and maintenance.'],['Operations','Delivery, collection, transport and treatment.'],['Business model','Activities, partners and operating costs extend beyond manufacturing.']], 'Enlarge the original diagram to follow the service.'],link:['Source: IDEO.org · Clean Team',CLEAN],ko:'서비스 도식을 보면 고객에게 보이는 제품 뒤에 수거, 운송, 처리와 협력자가 있습니다. 현장조사는 가치 제안뿐 아니라 활동·파트너·비용을 구체화하는 데도 사용됩니다.'},
-  {tag:'Real case / GOV.UK Notify',content:['After launch: observe real work.','In 2018, the live Notify service needed to support staff sending individual messages during phone calls.',[
-    ['Why visit?','This use had received little attention during early development.'],['Fieldwork','Researchers watched normal duties and listened to calls during workplace visits.'],['Finding → change','Phones were locked away during shifts. Email authentication was introduced; faster messaging was being built.']], 'The published account distinguishes the released change from work still in development.'],link:['Read the researchers’ account',NOTIFY],ko:'서비스 운영 중 초기 개발에서 충분히 다루지 못한 업무를 현장 방문으로 조사했습니다. 개인 휴대폰이 사물함에 있어 문자 인증을 못 하는 조건 때문에 이메일 인증을 도입했습니다. 전화 응대 중 빠르게 발송할 인터페이스는 당시 개발 중이었습니다.'},
-  {tag:'Business planning / What you can gain',theme:'case-overview',content:['What did the businesses change?','Field findings became changes to customer-facing content, the service offer and day-to-day access.',null,null],ko:'조사 자료를 모으는 것으로 끝나지 않습니다. 발견한 문제에 따라 고객에게 보여주는 정보, 판매할 서비스 범위, 실제 이용 절차가 달라집니다.'},
-  {tag:'Your team / Set the research purpose',content:['What does your business need to know?','Choose what to investigate based on a decision your business needs to make.',[
-    ['Audience experience','How do people notice, enter, understand and take part?'],['Client and production','What will a client or venue allow, require or provide?'],['Operating conditions','What people, materials, equipment or support does delivery require?']], 'A team may investigate more than one area. Choose the areas that affect your current proposal.'],ko:'전시·팬 행사·촬영·상담 등 사업마다 알아야 할 내용이 다릅니다. 자기 사업에서 내려야 할 결정을 기준으로 조사 목적을 정합니다.'},
-  {tag:'In-class activity / Make the plan',theme:'field-activity',content:['Plan the research together.','Agree on your research plan and start any contact or reservation needed.',[
-    ['Purpose and question','What do you need to learn, why does it matter, and which decision will it help?'],['Site and method','Where or with whom can you learn it? What will you observe, ask or try?'],['Records and roles','What will you record? Who will arrange, observe, ask and take notes?'],['Arrangements','Agree the visit time and check access, permission and contact details.']], 'No separate plan submission. Review the plan with another team and the instructor during class.'],ko:'팀별로 리서치 계획을 정하고 수업 중 검토합니다. 별도 제출은 없습니다.'},
-  {tag:'Next class / Team field research',theme:'field-next',content:['Next week: team fieldwork.','During the scheduled class time, each team carries out its field research instead of attending the regular class.',[
-    ['Follow the plan','Visit, observe, contact a filming venue or try a consultation as appropriate.'],['Record what you find','Keep relevant photos, sketches, notes or replies with your plan. Ask permission for interviews and recordings.'],['Use it in the final proposal','Explain what you learned and how it informs your signature project or business.']], 'No separate weekly submission. Retain the records for the final business proposal.'],ko:'다음 주는 정규 수업 대신 조별 필드리서치를 수행합니다. 조사 기록과 반영 내용은 기말 사업 제안서에 포함하며 별도 주차별 제출물은 없습니다.'},
-  {tag:'References / Original accounts and media',content:['Read the work behind the cases.','The case photographs, diagrams and video are credited to the original organisations.',[
-    ['Airbnb','Host visits and listing photography, as recounted by Joe Gebbia.'],['Cooper Hewitt','Visitor experience and testing front-desk operations.'],['IDEO.org','Clean Team’s household research and integrated service model.'],['GOV.UK','The Notify research team’s account of observing work and using field records.']], 'The Pen is a historical case, used by the museum in 2015–2020.'],ko:'사례의 성과나 조사 결과를 가정하지 않고 원 기관의 기록을 사용했습니다. 각 이미지와 영상에서 원문을 확인할 수 있습니다.'}
+  {
+    "tag": "Case 01 / Airbnb · New York · 2009",
+    "showStartButton": false,
+    "content": [
+      "Airbnb: visit the hosts.",
+      "After launch, bookings were not growing. The founders needed to learn what prevented people from choosing a listing.",
+      [
+        [
+          "Why go?",
+          "New York had demand, but listings were difficult to judge from poor photos."
+        ],
+        [
+          "In the field",
+          "Visited hosts at home, discussed their situations and re-photographed rooms."
+        ],
+        [
+          "What they learned",
+          "Hosts struggled to present their homes; many needed the income to pay rent."
+        ],
+        [
+          "What changed",
+          "Improved listing photos and provided hands-on host support."
+        ]
+      ],
+      "Gebbia reported weekly revenue rising from $200 to $400 after the visits and photo work."
+    ],
+    "link": [
+      "Accounts: Paul Graham / Y Combinator",
+      "https://www.ycombinator.com/blog/the-airbnbs"
+    ],
+    "ko": "출시 후 성장 정체를 겪던 Airbnb는 검색 데이터로 수요가 있는 뉴욕을 찾았습니다. 창업자들은 호스트의 집을 직접 방문해 대화하고 숙소를 촬영했습니다. 숙소를 잘 보여주지 못하는 사진 문제와 호스트의 생계 상황을 이해하고, 사진과 호스트 지원을 개선했습니다. 매출 증가는 방문과 사진 작업을 함께 수행한 뒤의 창업자 회고입니다."
+  },
+  {
+    "tag": "Case 02 / Unilever + WSUP + IDEO.org · Clean Team · Before 2012 launch",
+    "content": [
+      "Clean Team: test the service at home.",
+      "Before manufacturing a new household toilet, the partners needed to know how people would actually manage the waste.",
+      [
+        [
+          "Why go?",
+          "Would families accept waste collection and staff entering their homes?"
+        ],
+        [
+          "In the field",
+          "Interviewed residents, shadowed an operator and put portable toilets in homes."
+        ],
+        [
+          "What they learned",
+          "After using the toilets, residents valued collection more than they had predicted."
+        ],
+        [
+          "What changed",
+          "Combined a toilet with collection and maintenance; piloted before manufacturing."
+        ]
+      ],
+      "Research changed what the business would sell, who would do the work and how the service would operate."
+    ],
+    "link": [
+      "Original project process: IDEO.org / Design Kit",
+      "https://www.designkit.org/case-studies/1.html"
+    ],
+    "ko": "제조 전에 가정용 화장실과 수거 서비스를 실제로 이용할 수 있는지 조사했습니다. 주민 인터뷰와 화장실 운영자 동행 후 잠재 고객의 집에 이동식 화장실을 두었습니다. 처음에는 직접 처리하겠다고 했던 주민들도 사용 후 수거의 가치를 느꼈습니다. 판매 범위가 화장실 제품에서 수거·유지관리까지 포함하는 서비스로 구체화됐습니다."
+  },
+  {
+    "tag": "Case 03 / Crowne Plaza + IDEO · Live hotel pilot · Reported 2016",
+    "content": [
+      "Crowne Plaza: measure the lobby in use.",
+      "Before extending a new hotel workspace concept, IDEO tested it in operating hotels with business travellers.",
+      [
+        [
+          "Why go?",
+          "Would guests use the new workspace, at what times and for how long?"
+        ],
+        [
+          "In the field",
+          "Interviewed and observed guests; compared original and redesigned lobbies using sensors."
+        ],
+        [
+          "What they learned",
+          "Group spaces had 20–35-minute visits, including previously quiet periods."
+        ],
+        [
+          "What changed",
+          "Validated the layout and the need for fast ordering and drink delivery."
+        ]
+      ],
+      "First test site: 79% more people passed through; 80% more people sat down. These are the published pilot comparisons."
+    ],
+    "link": [
+      "Researchers’ account and actual equipment",
+      "https://www.ideo.com/journal/catching-ghosts"
+    ],
+    "ko": "새 업무 공간을 확대하기 전에 실제 운영 중인 호텔에서 기존 로비와 변경된 로비를 비교했습니다. 인터뷰·관찰에 더해 좌석·근접·동선 센서로 이용 시간과 체류를 측정했습니다. 짧은 회의와 비어 있던 시간대의 이용을 확인했고, 공간 구성뿐 아니라 주문과 음료 제공이 빨라야 한다는 운영 요구를 구체화했습니다."
+  },
+  {
+    "tag": "Case 04 / GE Healthcare · Adventure Series · Designer’s account, 2012",
+    "content": [
+      "GE: redesign the child’s scan experience.",
+      "A hospital visit showed designer Doug Dietz that a functioning scanner could still create a frightening experience.",
+      [
+        [
+          "Why go?",
+          "On a hospital visit, Dietz saw a frightened child and family."
+        ],
+        [
+          "In the field",
+          "Considered the child’s perspective; worked with children and hospital specialists."
+        ],
+        [
+          "What they learned",
+          "Equipment, noise, surroundings and instructions all contributed to fear."
+        ],
+        [
+          "What changed",
+          "Created themed rooms, equipment graphics and stories to guide the scan."
+        ]
+      ],
+      "The design scope expanded from the scanner’s enclosure to the experience delivered by the hospital."
+    ],
+    "link": [
+      "GE product and experience documentation",
+      "https://www.gehealthcare.com/en-us/products/imaging-accessories/adventure-series"
+    ],
+    "ko": "장비가 정상 작동해도 실제 이용 경험은 두려울 수 있었습니다. 병원에서 아이와 가족의 반응을 본 디자이너는 아이의 눈높이에서 공간과 안내를 다시 살펴보고, 어린이·병원 직원·어린이박물관 전문가와 함께 작업했습니다. 장비 외형을 넘어 공간 그래픽과 이야기, 직원의 안내를 포함하는 검사 경험으로 설계 범위가 넓어졌습니다."
+  },
+  {
+    "tag": "Case 05 / Cooper Hewitt + Tellart · On-site operational testing · 2015 experience",
+    "content": [
+      "Cooper Hewitt: test the museum workflow.",
+      "Before deploying the Pen, the museum had to connect the visitor device to admission and everyday front-desk work.",
+      [
+        [
+          "Why go?",
+          "How would staff distribute Pens, pair tickets and guide visitors?"
+        ],
+        [
+          "In the setting",
+          "Tested several operational approaches in the real museum environment."
+        ],
+        [
+          "What they learned",
+          "Pairing and guidance had to fit existing front-desk responsibilities."
+        ],
+        [
+          "What changed",
+          "Built ticket-pairing electronics, administrative tools and a distribution process."
+        ]
+      ],
+      "An operational field pilot: the device’s design and the venue’s delivery process had to work together."
+    ],
+    "link": [
+      "Design and testing account: Cooper Hewitt",
+      "https://www.cooperhewitt.org/new-experience/designing-pen/"
+    ],
+    "ko": "펜을 배포하기 전에 실제 미술관에서 티켓·기기 연결과 안내 과정을 여러 방식으로 시험했습니다. 관객에게 기기를 주는 작업은 입장 응대와 함께 돌아가야 했습니다. 그 결과 티켓 연결 전자 장치와 관리 도구, 배포 과정이 구체화됐습니다. 이는 관객 행동을 관찰하는 조사와 구분되는 현장 운영 파일럿 사례입니다."
+  },
+  {
+    "tag": "Case 06 / GOV.UK Notify · Workplace observation · 2018",
+    "content": [
+      "Notify: watch the work around the screen.",
+      "After launch, researchers investigated a use case that early development had given little attention: one-off messages during phone calls.",
+      [
+        [
+          "Why go?",
+          "Understand message-sending during calls, beyond what a lab test could show."
+        ],
+        [
+          "In the field",
+          "Visited service teams, observed their normal work and listened to calls."
+        ],
+        [
+          "What they learned",
+          "Phones were locked away during shifts, making SMS login impossible for some staff."
+        ],
+        [
+          "What changed",
+          "Released email authentication; a faster messaging interface was still in development."
+        ]
+      ],
+      "The released authentication change addressed a workplace condition, not a lack of user skill."
+    ],
+    "link": [
+      "Research team’s original account",
+      "https://userresearch.blog.gov.uk/2018/06/12/how-were-using-contextual-research-to-improve-gov-uk-notify/"
+    ],
+    "ko": "출시 후 실제 업무 현장을 방문해 전화 응대와 문자 발송을 함께 관찰했습니다. 일부 직원은 휴대폰을 사물함에 보관해야 해서 문자 인증으로 로그인할 수 없었습니다. 이에 이메일 인증을 도입했습니다. 빠른 개별 발송 인터페이스는 당시 개발 중이었으므로 이미 완료된 개선과 구분합니다."
+  }
 ];
 const visuals = {
-  'Today / Review, understand, plan': image('pen-table.png','A visitor using the Cooper Hewitt Pen at an interactive table','Cooper Hewitt · Pen and interactive table. Historical project, 2015–2020.','https://www.cooperhewitt.org/exhibitions/using-the-pen/'),
-  'Presentations / Campaign and branding': `<figure class="visual field-photo"><img src="../week11/media/figjam-results-form.png" alt="Campaign review worksheet"><figcaption>Campaign results, the original and revised work, and the reason for the change.</figcaption></figure>`,
-  'Purpose / The role of field research': cards([['Before launch','Clean Team → define a service people can live with.'],['Growth problem','Airbnb → understand and improve the booking offer.'],['Live operation','Notify → remove barriers in actual work.']]),
-  'Method / What counts as field research?': image('ideo-field-interview.jpg','An illustration from IDEO’s Tokyo field-research diary','IDEO · illustrated diary of insurance-client research in Tokyo, published 2017.',IDEO_FIELD),
-  'Real case / Cooper Hewitt': `<figure class="visual field-video"><div class="video-shell"><iframe src="https://www.youtube-nocookie.com/embed/ejIvvwmtX8M" title="Cooper Hewitt: Using the Pen, official 39-second animation" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div><figcaption>Cooper Hewitt · official visitor instructions, 39 sec. ${sourceLink('https://www.youtube.com/watch?v=ejIvvwmtX8M','Watch on YouTube')} · ${sourceLink(PEN_USE,'Museum source')}</figcaption><p class="watch-question">Watch for: collecting, drawing, returning and retrieving the visit.</p></figure>`,
-  'Real case / Testing operations': image('pen-instructions.jpg','The museum’s illustrated instructions for drawing, saving, returning and retrieving a visit','Cooper Hewitt · actual visitor instruction card.','https://www.cooperhewitt.org/exhibitions/using-the-pen/','portrait-document'),
-  'Real case / Airbnb': image('airbnb-gebbia.png','Airbnb co-founder Joe Gebbia','Joe Gebbia · First Round interview portrait. Not a photograph of the 2009 field visits.',AIRBNB),
-  'Real case / IDEO.org and Clean Team': image('clean-team.jpg','Clean Team toilet demonstrated in a Ghanaian neighbourhood','IDEO.org · Clean Team project photograph.',CLEAN),
-  'Real case / The business behind the product': image('clean-team-diagram.png','IDEO.org diagram of the Clean Team collection and treatment service','IDEO.org · Clean Team’s service system. Enlarge to read each stage.',CLEAN,'diagram-document'),
-  'Real case / GOV.UK Notify': image('notify-screen.png','The real Notify screen for sending a message to a recipient','GOV.UK · a service team’s Notify interface, published June 2018.',NOTIFY,'interface-document'),
-  'Business planning / What you can gain': `<div class="visual case-results">${[
-    ['airbnb-gebbia.png','Airbnb','Poor listing photos','Visit hosts and reshoot properties','Customer-facing listing information',AIRBNB,'Joe Gebbia portrait; not a photo of the 2009 visit.'],
-    ['clean-team-diagram.png','Clean Team','Waste disposal was a household burden','Add collection and maintenance','The service sold to households',CLEAN,'IDEO.org’s actual service-system diagram.'],
-    ['notify-screen.png','GOV.UK Notify','Staff could not reach phones at work','Introduce email authentication','Access to the live service',NOTIFY,'Actual interface published with the research account.']
-  ].map(([file,name,finding,change,decision,url,credit])=>`<section><figure><button type="button" class="image-open" data-image="media/${file}" data-alt="${credit}" data-credit="${name}: ${credit}" aria-label="Enlarge ${name} source image"><img src="media/${file}" alt="${credit}"></button><figcaption>${credit}</figcaption></figure><h2>${name}</h2><p class="finding">${finding}</p><p class="change">${change}</p><p class="decision">${decision}</p>${sourceLink(url,'Original account')}</section>`).join('')}</div>`,
-  'Your team / Set the research purpose': image('pen-instructions.jpg','Cooper Hewitt visitor instruction card','Cooper Hewitt · visitor instructions reveal actions, guidance and operating requirements.','https://www.cooperhewitt.org/exhibitions/using-the-pen/'),
-  'In-class activity / Make the plan': cards([['This class','Agree your purpose, questions, method, arrangements and roles.'],['Peer review','Can the chosen place or person answer your question?'],['Ready to go','Start the booking or outreach needed for next week.']]),
-  'Next class / Team field research': `<div class="visual next-class"><p class="eyebrow">CLASS ARRANGEMENT</p><h2>Team fieldwork</h2><p>In place of the regular class</p><p>During the scheduled class time</p><hr><p>Keep the records. Use them in your final proposal.</p></div>`,
-  'References / Original accounts and media': `<div class="visual reading-list">${[[AIRBNB,'Airbnb · Joe Gebbia’s account'],[IDEO_FIELD,'IDEO · An actual research day in Tokyo'],[PEN,'Cooper Hewitt · Designing the Pen'],[PEN_USE,'Cooper Hewitt · Using the Pen (video)'],[PEN_LABS,'Cooper Hewitt Labs · Administrative tools'],[CLEAN,'IDEO.org · Clean Team'],[NOTIFY,'GOV.UK Notify · Contextual research'],['https://www.gov.uk/service-manual/user-research/contextual-research-and-observation','GOV.UK · Contextual research and observation'],['https://www.designcouncil.org.uk/resources/the-double-diamond/','Design Council · The Double Diamond']].map(([url,label])=>sourceLink(url,label)).join('')}</div>`
+  "Case 01 / Airbnb · New York · 2009": "<div class=\"visual case-media\"><figure class=\"field-video\"><div class=\"video-shell\"><iframe src=\"https://www.youtube-nocookie.com/embed/TCA_7RVo7Uo\" title=\"Joe Gebbia and Reid Hoffman: Scaling Product at Airbnb\" allow=\"accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen\" allowfullscreen referrerpolicy=\"strict-origin-when-cross-origin\"></iframe></div><figcaption>Y Combinator · founder interview, 2017. Host visits and ethnographic research are discussed. <a href=\"https://www.ycombinator.com/blog/scaling-product-airbnb\" target=\"_blank\" rel=\"noopener noreferrer\">Video source</a></figcaption></figure><figure class=\"field-photo media-short\"><button type=\"button\" class=\"image-open\" data-image=\"media/airbnb-gebbia.png\" data-alt=\"Airbnb co-founder Joe Gebbia\" data-credit=\"Joe Gebbia · interview portrait, not a photograph of the 2009 visits.\" aria-label=\"Enlarge: Airbnb co-founder Joe Gebbia\"><img src=\"media/airbnb-gebbia.png\" alt=\"Airbnb co-founder Joe Gebbia\"></button><figcaption>Joe Gebbia · interview portrait, not a photograph of the 2009 visits. <a href=\"https://review.firstround.com/how-design-thinking-transformed-airbnb-from-failing-startup-to-billion-dollar-business/\" target=\"_blank\" rel=\"noopener noreferrer\">Source</a></figcaption></figure></div>",
+  "Case 02 / Unilever + WSUP + IDEO.org · Clean Team · Before 2012 launch": "<div class=\"visual case-media\"><figure class=\"field-video\"><div class=\"video-shell\"><iframe src=\"https://player.vimeo.com/video/57379407\" title=\"IDEO.org: Crapmap Prototyping Journey\" allow=\"accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen\" allowfullscreen referrerpolicy=\"strict-origin-when-cross-origin\"></iframe></div><figcaption>IDEO.org · eight weeks of Kumasi prototyping in a two-minute project diary. <a href=\"https://vimeo.com/57379407\" target=\"_blank\" rel=\"noopener noreferrer\">Video source</a></figcaption></figure><div class=\"media-pair\"><figure class=\"field-photo \"><button type=\"button\" class=\"image-open\" data-image=\"media/clean-team.jpg\" data-alt=\"Clean Team in-home toilet\" data-credit=\"IDEO.org · project photograph.\" aria-label=\"Enlarge: Clean Team in-home toilet\"><img src=\"media/clean-team.jpg\" alt=\"Clean Team in-home toilet\"></button><figcaption>IDEO.org · project photograph. <a href=\"https://www.ideo.org/project/clean-team\" target=\"_blank\" rel=\"noopener noreferrer\">Source</a></figcaption></figure><figure class=\"field-photo \"><button type=\"button\" class=\"image-open\" data-image=\"media/clean-team-diagram.png\" data-alt=\"Clean Team collection and treatment service diagram\" data-credit=\"IDEO.org · final service system.\" aria-label=\"Enlarge: Clean Team collection and treatment service diagram\"><img src=\"media/clean-team-diagram.png\" alt=\"Clean Team collection and treatment service diagram\"></button><figcaption>IDEO.org · final service system. <a href=\"https://www.ideo.org/project/clean-team\" target=\"_blank\" rel=\"noopener noreferrer\">Source</a></figcaption></figure></div></div>",
+  "Case 03 / Crowne Plaza + IDEO · Live hotel pilot · Reported 2016": "<div class=\"visual case-media image-case\"><figure class=\"field-photo \"><button type=\"button\" class=\"image-open\" data-image=\"https://cdn.prod.website-files.com/68c99b3e3a4f357e8af47a40/68d1563407f62011c1d4d449_6501e17b507eeeaff049bf2b_1657557617-image12.jpeg\" data-alt=\"The Crowne Plaza workspace tested by IDEO\" data-credit=\"IDEO · the actual redesigned hotel workspace.\" aria-label=\"Enlarge: The Crowne Plaza workspace tested by IDEO\"><img src=\"https://cdn.prod.website-files.com/68c99b3e3a4f357e8af47a40/68d1563407f62011c1d4d449_6501e17b507eeeaff049bf2b_1657557617-image12.jpeg\" alt=\"The Crowne Plaza workspace tested by IDEO\"></button><figcaption>IDEO · the actual redesigned hotel workspace. <a href=\"https://www.ideo.com/journal/catching-ghosts\" target=\"_blank\" rel=\"noopener noreferrer\">Source</a></figcaption></figure><figure class=\"field-photo media-short\"><button type=\"button\" class=\"image-open\" data-image=\"https://cdn.prod.website-files.com/68c99b3e3a4f357e8af47a40/68d1563407f62011c1d4d418_6501e17b507eeeaff049bf29_1657557649-image14.jpeg\" data-alt=\"A proximity sensor under a pilot workspace stool\" data-credit=\"IDEO · proximity sensor under a hard plastic stool.\" aria-label=\"Enlarge: A proximity sensor under a pilot workspace stool\"><img src=\"https://cdn.prod.website-files.com/68c99b3e3a4f357e8af47a40/68d1563407f62011c1d4d418_6501e17b507eeeaff049bf29_1657557649-image14.jpeg\" alt=\"A proximity sensor under a pilot workspace stool\"></button><figcaption>IDEO · proximity sensor under a hard plastic stool. <a href=\"https://www.ideo.com/journal/catching-ghosts\" target=\"_blank\" rel=\"noopener noreferrer\">Source</a></figcaption></figure></div>",
+  "Case 04 / GE Healthcare · Adventure Series · Designer’s account, 2012": "<div class=\"visual case-media\"><figure class=\"field-video\"><div class=\"video-shell\"><iframe src=\"https://www.youtube-nocookie.com/embed/jajduxPD6H4\" title=\"Doug Dietz: Transforming healthcare for children and their families\" allow=\"accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen\" allowfullscreen referrerpolicy=\"strict-origin-when-cross-origin\"></iframe></div><figcaption>TEDxSanJoseCA · the designer’s firsthand account, 2012. <a href=\"https://tedxsanjoseca.org/doug-dietz/\" target=\"_blank\" rel=\"noopener noreferrer\">Video source</a></figcaption></figure><figure class=\"field-photo media-short\"><button type=\"button\" class=\"image-open\" data-image=\"https://s7d9.scene7.com/is/image/gehealthcare/adventure-series-pirate-island-st-en?fmt=webp\" data-alt=\"GE Healthcare Pirate Island themed imaging room\" data-credit=\"GE HealthCare · Pirate Island, an actual Adventure Series design.\" aria-label=\"Enlarge: GE Healthcare Pirate Island themed imaging room\"><img src=\"https://s7d9.scene7.com/is/image/gehealthcare/adventure-series-pirate-island-st-en?fmt=webp\" alt=\"GE Healthcare Pirate Island themed imaging room\"></button><figcaption>GE HealthCare · Pirate Island, an actual Adventure Series design. <a href=\"https://www.gehealthcare.com/en-us/products/imaging-accessories/adventure-series\" target=\"_blank\" rel=\"noopener noreferrer\">Source</a></figcaption></figure></div>",
+  "Case 05 / Cooper Hewitt + Tellart · On-site operational testing · 2015 experience": "<div class=\"visual case-media\"><figure class=\"field-video\"><div class=\"video-shell\"><iframe src=\"https://www.youtube-nocookie.com/embed/ejIvvwmtX8M\" title=\"Cooper Hewitt: The Pen\" allow=\"accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen\" allowfullscreen referrerpolicy=\"strict-origin-when-cross-origin\"></iframe></div><figcaption>Cooper Hewitt · official visitor instructions, 39 seconds. <a href=\"https://www.cooperhewitt.org/2015/03/05/using-the-pen/\" target=\"_blank\" rel=\"noopener noreferrer\">Video source</a></figcaption></figure><div class=\"media-pair\"><figure class=\"field-photo \"><button type=\"button\" class=\"image-open\" data-image=\"media/pen-table.png\" data-alt=\"The Cooper Hewitt Pen at an interactive table\" data-credit=\"Cooper Hewitt · Pen in use.\" aria-label=\"Enlarge: The Cooper Hewitt Pen at an interactive table\"><img src=\"media/pen-table.png\" alt=\"The Cooper Hewitt Pen at an interactive table\"></button><figcaption>Cooper Hewitt · Pen in use. <a href=\"https://www.cooperhewitt.org/new-experience/designing-pen/\" target=\"_blank\" rel=\"noopener noreferrer\">Source</a></figcaption></figure><figure class=\"field-photo \"><button type=\"button\" class=\"image-open\" data-image=\"media/pen-instructions.jpg\" data-alt=\"The museum’s Pen instruction card\" data-credit=\"Cooper Hewitt · visitor instructions.\" aria-label=\"Enlarge: The museum’s Pen instruction card\"><img src=\"media/pen-instructions.jpg\" alt=\"The museum’s Pen instruction card\"></button><figcaption>Cooper Hewitt · visitor instructions. <a href=\"https://labs.cooperhewitt.org/2016/museums-and-the-web-conference-recap-administrative-tools-at-cooper-hewitt/\" target=\"_blank\" rel=\"noopener noreferrer\">Source</a></figcaption></figure></div></div>",
+  "Case 06 / GOV.UK Notify · Workplace observation · 2018": "<div class=\"visual case-media notify-case\"><figure class=\"field-photo \"><button type=\"button\" class=\"image-open\" data-image=\"media/notify-screen.png\" data-alt=\"The actual GOV.UK Notify message recipient screen\" data-credit=\"GOV.UK · interface published with the 2018 field-research account.\" aria-label=\"Enlarge: The actual GOV.UK Notify message recipient screen\"><img src=\"media/notify-screen.png\" alt=\"The actual GOV.UK Notify message recipient screen\"></button><figcaption>GOV.UK · interface published with the 2018 field-research account. <a href=\"https://userresearch.blog.gov.uk/2018/06/12/how-were-using-contextual-research-to-improve-gov-uk-notify/\" target=\"_blank\" rel=\"noopener noreferrer\">Source</a></figcaption></figure><section class=\"change-strip\" aria-label=\"Change in authentication\"><p>Workplace finding</p><strong>Phones stored in lockers</strong><p>Service response</p><strong>Email authentication added</strong></section></div>"
 };

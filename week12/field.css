@@ -66,3 +66,27 @@ body.week12 { --frame:1600px; margin:0; height:100svh; overflow:hidden; display:
 .week12 #menu { max-height:85svh;overflow:auto; }
 .week12 #menu button { font-size:1rem; }
 @media(max-width:700px){.week12 .brand span,.week12 .chapter{display:none}.week12 .topbar,.week12 .bottombar{padding-inline:12px}.week12 .actions{gap:4px}.week12 .actions button,.week12 .week-link{font-size:12px;padding:7px}.week12 .nav button{font-size:13px}.week12 .counter{font-size:12px}.week12 .topbar{min-height:50px}.week12 .bottombar{min-height:42px}}
+
+.week12 .case-media { display:grid;gap:22px;max-height:760px; }
+.week12 .case-media figure { margin:0;min-width:0; }
+.week12 .case-media figcaption { font-size:17px;line-height:1.3;margin-top:10px; }
+.week12 .case-media .media-short img { height:205px;object-fit:contain; }
+.week12 .media-pair { display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start; }
+.week12 .media-pair img { height:205px;object-fit:contain; }
+.week12 .image-case>.field-photo:first-child img { height:340px; }
+.week12 .notify-case img { height:430px; }
+.week12 .change-strip { border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:12px 22px;padding-top:20px; }
+.week12 .change-strip p { font-size:20px;color:var(--dim);margin:0; }
+.week12 .change-strip strong { font-size:28px;line-height:1.25;color:var(--accent); }
+.week12 .row { padding:15px 0; }
+.week12 .note { font-size:20px; }
+
+/* Lecture copy: short labelled paragraphs, with the full column for each finding. */
+.week12 .row { display:block;padding:12px 0;line-height:1.38; }
+.week12 .row strong { display:inline;font-size:21px;margin-right:14px; }
+.week12 .row span { display:inline;font-size:23px;line-height:1.38; }
+.week12 h1,.week12 .with-visual h1 { font-size:56px;margin-bottom:18px; }
+.week12 .lead { font-size:25px;line-height:1.38;margin-bottom:20px; }
+.week12 .eyebrow { font-size:17px;line-height:1.35;margin-bottom:18px; }
+.week12 .note { font-size:19px;line-height:1.4;margin-top:18px; }
+.week12 .decklink { font-size:21px;margin-top:18px; }

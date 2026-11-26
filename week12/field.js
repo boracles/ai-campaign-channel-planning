@@ -7,7 +7,7 @@ function fitStage(){
   document.getElementById('deck').style.transform=`scale(${scale})`;
 }
 function decorateSlide(){
-  const number=Number((location.hash.match(/slide-(\d+)/)||[])[1]||1)-1;
+  const number=Math.max(0,Math.min(slides.length-1,Number((location.hash.match(/slide-(\d+)/)||[])[1]||1)-1));
   const slide=slides[number];if(!slide)return;
   document.getElementById('korean-copy').textContent=slide.ko||'';
   fitStage();
