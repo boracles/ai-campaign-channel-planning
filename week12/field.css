@@ -1,61 +1,72 @@
-.week12 { --frame: 1560px; }
-.week12 .brand,.week12 .counter,.week12 .chapter { font-size:.875rem; }
-.week12 .actions { display:flex;align-items:center;gap:.6rem;flex-wrap:wrap; }
-.week12 .week-link { text-decoration:none;font-size:.9rem;padding:.5rem .65rem; }
-.week12 article { min-height:calc(100svh - 145px);padding:clamp(25px,4.2vw,64px); }
-.week12 article.with-visual { grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,4.4vw,65px); }
-.week12 h1,.week12 .with-visual h1 { font-size:clamp(2.5rem,4.4vw,5.4rem);max-width:20ch;line-height:1.01; }
-.week12 .lead { font-size:clamp(1.05rem,1.45vw,1.38rem);line-height:1.5; }
-.week12 .row { grid-template-columns:minmax(105px,.72fr) 2fr;gap:1rem; }
-.week12 .row strong,.week12 .row span { font-size:clamp(1rem,1.12vw,1.2rem);line-height:1.5; }
-.week12 .note,.week12 .visual figcaption { font-size:.9rem;line-height:1.5; }
-.week12 .eyebrow { font-size:.875rem; }
+/* A single 1600 × 900 slide canvas, fitted to the available screen. */
+body.week12 { --frame:1600px; margin:0; height:100svh; overflow:hidden; display:flex; flex-direction:column; gap:8px; padding:0 0 10px; }
+.week12 .topbar,.week12 .bottombar,.week12 .deck-progress { width:100%; flex:none; }
+.week12 .topbar { min-height:58px; }
+.week12 .bottombar { min-height:46px; }
+.week12 .deck-progress { height:3px; }
+.week12 .brand,.week12 .counter,.week12 .chapter { font-size:.8rem; }
+.week12 .actions { display:flex;align-items:center;gap:.6rem; }
+.week12 .week-link { text-decoration:none;font-size:.9rem;padding:.5rem; }
+.week12 #stage-shell { flex:none;position:relative;margin:auto; }
+.week12 #deck { position:absolute;left:0;top:0;width:1600px;height:900px;max-width:none;margin:0;padding:0;transform-origin:top left; }
+.week12 article,.week12 article.with-visual { width:1600px;height:900px;min-height:0;max-height:none;padding:52px 60px;gap:54px; }
+.week12 article.with-visual { display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center; }
+.week12 .copy { min-width:0; }
+.week12 h1,.week12 .with-visual h1 { font-size:66px;line-height:1.01;letter-spacing:-.02em;max-width:none;margin:0 0 22px;text-wrap:balance; }
+.week12 .lead { font-size:27px;line-height:1.4;margin:0 0 24px;max-width:none; }
+.week12 .eyebrow { font-size:18px;letter-spacing:.08em;margin:0 0 22px; }
+.week12 .row { grid-template-columns:170px minmax(0,1fr);gap:22px;padding:18px 0; }
+.week12 .row strong,.week12 .row span { font-size:24px;line-height:1.4; }
+.week12 .note { font-size:21px;line-height:1.4;margin:20px 0 0; }
+.week12 .decklink { font-size:23px;margin-top:22px;line-height:1.35; }
 .week12 .field-cover { background:#e7fb68;--accent:#263c15;--ink:#172214;--dim:#33452c;--line:#97aa64;color:#172214; }
-.week12 .field-cover h1 { font-size:clamp(3.8rem,7.7vw,8rem);max-width:10ch; }
+.week12 .field-cover h1 { font-size:98px; }
 .week12 .field-cover .decklink { color:#172214; }
-.week12 .field-cover .visual figcaption { color:#33452c; }
 .week12 .field-activity,.week12 .field-next { background:#26352a; }
+.week12 .visual { min-width:0;max-height:760px;align-self:center; }
 .week12 .field-photo { margin:0; }
 .week12 .image-open { display:block;padding:0;border:0;background:transparent;width:100%;border-radius:0; }
-.week12 .field-photo img { width:100%;height:auto;max-height:56svh;object-fit:contain;background:#f6f8f3;border-radius:3px;display:block; }
-.week12 .field-cover .field-photo img { max-height:64svh;object-fit:cover;min-height:350px; }
-.week12 .portrait-document img { max-height:67svh; }
-.week12 .diagram-document img { max-height:66svh; }
+.week12 .field-photo img { width:100%;height:auto;max-height:610px;object-fit:contain;background:#edf0e7;border-radius:3px;display:block; }
+.week12 .field-cover .field-photo img { height:440px;object-fit:cover; }
+.week12 .visual figcaption { font-size:19px;line-height:1.35;margin-top:16px; }
 .week12 figcaption a,.week12 .reading-list a { text-underline-offset:.22em; }
 .week12 .video-shell { aspect-ratio:16/9;background:#0b100c;border:1px solid var(--line); }
 .week12 .video-shell iframe { display:block;width:100%;height:100%;border:0; }
-.week12 .watch-question { border-top:1px solid var(--line);padding-top:1rem;color:var(--accent);font-size:1rem; }
+.week12 .watch-question { border-top:1px solid var(--line);padding-top:18px;color:var(--accent);font-size:23px;line-height:1.4; }
 .week12 .concept-board { display:grid;gap:0;border-top:1px solid var(--line); }
-.week12 .concept-board section { padding:1.3rem 0;border-bottom:1px solid var(--line); }
-.week12 .concept-board h2,.week12 .team-purpose h2,.week12 #lens-detail h2 { font-family:"Barlow Condensed",sans-serif;font-size:clamp(1.8rem,2.7vw,2.8rem);margin:0 0 .45rem;line-height:1.05; }
-.week12 .concept-board p,.week12 .team-purpose p,.week12 #lens-detail p { font-size:clamp(1.05rem,1.4vw,1.35rem);line-height:1.55;margin:.5rem 0; }
-.week12 .concept-board h2 { color:var(--accent); }
-.week12 .decision-tabs { display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem; }
-.week12 .decision-tabs button { font-size:1rem; }
-.week12 .decision-tabs [aria-pressed=true] { background:var(--accent);color:#192314;border-color:var(--accent); }
-.week12 #lens-detail { min-height:285px;border:1px solid var(--line);padding:1.8rem;background:#19221a; }
-.week12 #lens-detail .case-name { font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent); }
-.week12 .team-purpose { border-left:3px solid var(--accent);padding:1rem 0 1rem 2rem; }
-.week12 .team-purpose p { padding-bottom:1rem;border-bottom:1px solid var(--line); }
-.week12 .next-class { padding:2rem;border:1px solid #afc291;background:#d9efbd;color:#21351d; }
-.week12 .next-class h2 { font:700 clamp(3rem,5vw,5.5rem)/1 "Barlow Condensed",sans-serif;margin:.4rem 0 1rem; }
-.week12 .next-class p { font-size:1.15rem; }
+.week12 .concept-board section { padding:24px 0;border-bottom:1px solid var(--line); }
+.week12 .concept-board h2 { font:700 40px/1.08 "Barlow Condensed",sans-serif;color:var(--accent);margin:0 0 12px; }
+.week12 .concept-board p { font-size:26px;line-height:1.4;margin:0; }
+.week12 .next-class { padding:44px;border:1px solid #afc291;background:#d9efbd;color:#21351d; }
+.week12 .next-class h2 { font:700 78px/1 "Barlow Condensed",sans-serif;margin:18px 0 30px; }
+.week12 .next-class p { font-size:28px;line-height:1.4; }
 .week12 .next-class hr { border:0;border-top:1px solid #93aa7b; }
 .week12 .next-class .eyebrow { color:#35552c; }
 .week12 .reading-list { display:grid;border-top:1px solid var(--line); }
-.week12 .reading-list a { display:block;padding:.9rem 0;border-bottom:1px solid var(--line);font-size:1rem; }
-.week12 .ko-note { color:var(--dim);font-size:1rem;line-height:1.7;border-left:2px solid var(--accent);padding:.2rem 0 .2rem 1rem;margin:1rem 0 0; }
-.week12 .ko-note[hidden] { display:none; }
+.week12 .reading-list a { display:block;padding:18px 0;border-bottom:1px solid var(--line);font-size:23px;line-height:1.25; }
+.week12 .team-directory h2 { font:700 42px/1.1 "Barlow Condensed",sans-serif;margin:0 0 20px; }
+.week12 .team-links { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;border-top:1px solid var(--line); }
+.week12 .team-links a { display:flex;align-items:center;min-height:92px;padding:16px 0;border-bottom:1px solid var(--line);font-size:23px;line-height:1.35;text-underline-offset:.25em; }
+.week12 .team-directory>p { font-size:23px;line-height:1.4; }
+.week12 article.case-overview { display:flex;flex-direction:column;justify-content:flex-start;align-items:stretch;gap:25px; }
+.week12 .case-overview .eyebrow { margin-bottom:14px; }
+.week12 .case-overview h1 { margin-bottom:14px; }
+.week12 .case-overview .lead { margin:0; }
+.week12 .case-results { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px; }
+.week12 .case-results section { border-top:1px solid var(--line);padding-top:20px; }
+.week12 .case-results figure { margin:0; }
+.week12 .case-results img { width:100%;height:225px;object-fit:contain;background:#e7ebe3;display:block; }
+.week12 .case-results figcaption { font-size:17px;line-height:1.3;margin-top:9px;min-height:45px; }
+.week12 .case-results h2 { font:700 37px/1.05 "Barlow Condensed",sans-serif;margin:15px 0; }
+.week12 .case-results p { font-size:23px;line-height:1.35;margin:10px 0; }
+.week12 .case-results .change { color:var(--accent);border-left:3px solid var(--accent);padding-left:15px; }
+.week12 .case-results .decision { font-size:21px;color:var(--dim); }
+.week12 .case-results a { display:inline-block;font-size:20px;margin-top:6px; }
 .week12 #image-viewer { width:min(95vw,1400px);max-width:none;max-height:95svh;background:#151b17; }
 .week12 #image-viewer img { display:block;max-width:100%;max-height:78svh;width:auto;height:auto;margin:1rem auto; }
-.week12 #image-credit { font-size:.95rem; }
-.week12 .bottombar { gap:1.5rem; }
+.week12 #image-credit { font-size:1rem;line-height:1.5; }
+.week12 #korean-notes { width:min(90vw,850px);font-size:1.2rem;line-height:1.8; }
+.week12 #korean-notes p { margin:1.2rem 0 .2rem; }
+.week12 #menu { max-height:85svh;overflow:auto; }
 .week12 #menu button { font-size:1rem; }
-@media(max-width:900px){.week12 article.with-visual{grid-template-columns:1fr}.week12 article{min-height:0;padding:30px}.week12 .field-photo img{max-height:60svh}.week12 .field-cover .field-photo img{min-height:0}.week12 .topbar{padding-block:.7rem;align-items:flex-start}.week12 .brand span{display:none}.week12 h1,.week12 .with-visual h1{font-size:3rem}.week12 .field-cover h1{font-size:4.7rem}.week12 #lens-detail{min-height:0}.week12 .chapter{display:none}.week12 .bottombar{justify-content:flex-end}}
-@media(max-width:540px){.week12 .actions{gap:.3rem;justify-content:flex-end}.week12 .actions button,.week12 .week-link{font-size:.875rem;padding:.45rem}.week12 article{padding:24px}.week12 h1,.week12 .with-visual h1{font-size:2.65rem}.week12 .field-cover h1{font-size:3.8rem}.week12 .row{grid-template-columns:1fr;gap:.3rem}.week12 .concept-board p,.week12 .lead{font-size:1rem}.week12 .next-class{padding:1.4rem}.week12 .bottombar{padding-block:.8rem}.week12 .nav{gap:.4rem}}
-
-.week12 .team-directory h2 { font:700 2rem/1.1 "Barlow Condensed",sans-serif;margin:0 0 1rem; }
-.week12 .team-links { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 1.25rem;border-top:1px solid var(--line); }
-.week12 .team-links a { display:flex;align-items:center;min-height:72px;padding:.9rem 0;border-bottom:1px solid var(--line);font-size:1rem;line-height:1.4;text-underline-offset:.25em; }
-.week12 .team-directory>p { font-size:.95rem;line-height:1.5; }
-@media(max-width:540px){.week12 .team-links{grid-template-columns:1fr}.week12 .team-links a{min-height:52px}}
+@media(max-width:700px){.week12 .brand span,.week12 .chapter{display:none}.week12 .topbar,.week12 .bottombar{padding-inline:12px}.week12 .actions{gap:4px}.week12 .actions button,.week12 .week-link{font-size:12px;padding:7px}.week12 .nav button{font-size:13px}.week12 .counter{font-size:12px}.week12 .topbar{min-height:50px}.week12 .bottombar{min-height:42px}}
