@@ -55,13 +55,13 @@ const slides = [
           "Refined the collection service and piloted it with about 100 families before launch."
         ]
       ],
-      "Paid trial · Nov 2011: ~60 households subscribed at GHS 15/month, including twice-weekly collection. Public toilets could cost a five-person family up to GHS 45/month. Paid uptake shows demand; these figures do not establish profitability."
+      "Paid trial · Nov 2011: ~60 households subscribed at GHS 15/month, including twice-weekly collection. Public toilets could cost a five-person family up to GHS 45/month."
     ],
     "link": [
       "Original project process: IDEO.org / Design Kit",
       "https://www.designkit.org/case-studies/1.html"
     ],
-    "ko": "Clean Team은 가나 쿠마시에서 변기 임대와 정기적인 배설물 수거를 묶어 월 이용료를 받는 위생 서비스입니다. 조사팀은 수거를 이미 고려하고 있었지만, 주민들은 처음에는 비용을 아끼려고 직접 처리하겠다고 했습니다. 집에서 시제품을 사용한 뒤에는 처리 부담을 체감하며 수거의 가치를 느꼈습니다. WSUP의 2011년 11월 초기 실증 자료에는 약 60가구가 가입했고, 월 15세디에 주 2회 수거가 포함됐다고 나옵니다. 당시 5인 가족의 공중화장실 비용은 월 최대 45세디여서 일부 가구에는 기존 지출을 대체하는 선택지가 될 수 있었습니다. 이후 출시 전 약 100가구에서 시범 운영했습니다. 현장조사에서 찾은 필요를 유료 서비스 가입과 반복 매출 모델로 연결한 사례입니다. 다만 가입과 매출 발생이 사업 전체의 흑자를 뜻하지는 않으며, 가장 가난한 가구까지 비용을 감당할 수 있었다고 일반화하면 안 됩니다. 영상은 00:00–02:13 전체를 시청하면 됩니다."
+    "ko": "Clean Team은 가나 쿠마시에서 변기 임대와 정기적인 배설물 수거를 묶어 월 이용료를 받는 위생 서비스입니다. 조사팀은 수거를 이미 고려하고 있었지만, 주민들은 처음에는 비용을 아끼려고 직접 처리하겠다고 했습니다. 집에서 시제품을 사용한 뒤에는 처리 부담을 체감하며 수거의 가치를 느꼈습니다. WSUP의 2011년 11월 초기 실증 자료에는 약 60가구가 가입했고, 월 15세디에 주 2회 수거가 포함됐다고 나옵니다. 당시 5인 가족의 공중화장실 비용은 월 최대 45세디여서 일부 가구에는 기존 지출을 대체하는 선택지가 될 수 있었습니다. 이후 출시 전 약 100가구에서 시범 운영했습니다. 현장조사에서 찾은 필요를 유료 서비스 가입과 반복 매출 모델로 연결한 사례입니다. 영상은 00:00–02:13 전체를 시청하면 됩니다."
   },
   {
     "tag": "Case 03 / Crowne Plaza + IDEO · Live hotel pilot · Reported 2016",
