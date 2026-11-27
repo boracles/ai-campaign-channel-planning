@@ -90,3 +90,13 @@ body.week12 { --frame:1600px; margin:0; height:100svh; overflow:hidden; display:
 .week12 .eyebrow { font-size:17px;line-height:1.35;margin-bottom:18px; }
 .week12 .note { font-size:19px;line-height:1.4;margin-top:18px; }
 .week12 .decklink { font-size:21px;margin-top:18px; }
+
+/* Actual Ignition spaces: point to the features discussed in class. */
+.week12 .crowne-explainer { gap:20px; }
+.week12 .crowne-explainer .image-open { position:relative;overflow:hidden; }
+.week12 .crowne-explainer .crowne-primary img { height:300px;max-height:none;object-fit:cover;object-position:center 65%; }
+.week12 .crowne-explainer .crowne-secondary img { height:250px;max-height:none;object-fit:cover;object-position:center 70%; }
+.week12 .crowne-explainer figcaption strong { color:var(--ink);font-size:20px; }
+.week12 .crowne-explainer figcaption b { color:var(--accent); }
+.week12 .photo-marker { position:absolute;display:grid;place-items:center;width:34px;height:34px;transform:translate(-50%,-50%);background:#e7fb68;color:#172214;border:2px solid #172214;border-radius:50%;font:700 20px/1 "DM Sans",sans-serif;box-shadow:0 1px 6px #0008;pointer-events:none; }
+.week12 .photo-marker::after { content:"";position:absolute;right:100%;top:50%;width:38px;border-top:2px solid #e7fb68; }
