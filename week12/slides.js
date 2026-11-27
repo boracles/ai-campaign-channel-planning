@@ -66,55 +66,55 @@ const slides = [
   {
     "tag": "Case 03 / Crowne Plaza + IDEO · Live hotel pilot · Reported 2016",
     "content": [
-      "Crowne Plaza: measure the lobby in use.",
-      "Before extending a new hotel workspace concept, IDEO tested it in operating hotels with business travellers.",
+      "Crowne Plaza: a lobby built for work.",
+      "Tested in operating hotels, Ignition combined workspaces, food, digital ordering and staff support.",
       [
         [
-          "Why go?",
-          "Would guests use the new workspace, at what times and for how long?"
+          "Spaces",
+          "Solo Pods, four-person meeting Nooks/Huddles, and a 10-person room bookable by the hour."
         ],
         [
-          "In the field",
-          "Interviewed and observed guests; compared original and redesigned lobbies using sensors."
+          "Food",
+          "One-handed, non-drippy meals on square plates, delivered to where guests were working."
         ],
         [
-          "What they learned",
-          "Group spaces had 20–35-minute visits, including previously quiet periods."
+          "Ordering",
+          "Tablet-based Food To You ordering and a 24-hour self-service food market."
         ],
         [
-          "What changed",
-          "Validated the layout and the need for fast ordering and drink delivery."
+          "Support",
+          "A dedicated Host and chat service for meeting help, photocopies and local advice."
         ]
       ],
-      "First test site: 79% more people passed through; 80% more people sat down. These are the published pilot comparisons."
+      "Fieldwork: interviews, observation and sensors found 20–35-minute visits, reinforcing the need for orders in under 1 minute and drinks within 5 minutes. First pilot: foot traffic +79%; seated use +80%."
     ],
     "link": [
-      "Researchers’ account and actual equipment",
-      "https://www.ideo.com/journal/catching-ghosts"
+      "Design changes: IDEO project case",
+      "https://www.ideo.com/case-study/designing-a-modern-work-experience-for-business-travelers"
     ],
-    "ko": "새 업무 공간을 확대하기 전에 실제 운영 중인 호텔에서 기존 로비와 변경된 로비를 비교했습니다. 인터뷰·관찰에 더해 좌석·근접·동선 센서로 이용 시간과 체류를 측정했습니다. 짧은 회의와 비어 있던 시간대의 이용을 확인했고, 공간 구성뿐 아니라 주문과 음료 제공이 빨라야 한다는 운영 요구를 구체화했습니다."
+    "ko": "Crowne Plaza는 출장객이 호텔 로비에서 일하거나 짧은 회의를 할 수 있도록 Ignition을 만들었습니다. 1인용 업무 공간, 4인 소규모 회의 공간, 시간 단위로 예약하는 10인 공간을 구성했습니다. 일하면서 한 손으로 먹기 좋고 잘 흘리지 않는 메뉴를 사각 접시에 담아 자리로 가져다줬고, 태블릿 주문·Host 채팅·24시간 셀프서비스 식품 공간을 도입했습니다. 전담 Host는 회의 준비와 복사, 주변 식당 안내 등을 지원했습니다. 실제 영업 중인 호텔에서 기존 로비와 변경된 공간을 인터뷰·관찰·센서로 비교했습니다. 20~35분 정도 머무른다는 관찰 결과는 주문 1분 이내·음료 제공 5분 이내라는 운영 조건의 중요성을 뒷받침했습니다. 첫 시험 장소의 통행 인원은 79%, 앉아서 이용한 인원은 80% 늘었습니다. 사진의 1은 공동 화면, 2와 3은 주문·Host 연결 태블릿, 4는 업무 공간 옆 전원입니다. 이 시범 프로젝트를 직접 보여주는 확인된 영상은 찾지 못해 실제 프로젝트 사진과 설명으로 구성했습니다."
   },
   {
     "tag": "Case 04 / GE Healthcare · Adventure Series · Designer’s account, 2012",
     "content": [
       "GE: redesign the child’s scan experience.",
-      "A hospital visit showed designer Doug Dietz that a functioning scanner could still create a frightening experience.",
+      "A hospital visit showed Doug Dietz how frightening a scan could be for a child and family.",
       [
         [
           "Why go?",
-          "On a hospital visit, Dietz saw a frightened child and family."
+          "Seeing a child cry and freeze at the scanner revealed a problem the designer had missed."
         ],
         [
           "In the field",
-          "Considered the child’s perspective; worked with children and hospital specialists."
+          "Observed families in hospital; worked with children, hospital staff and a children’s museum."
         ],
         [
           "What they learned",
-          "Equipment, noise, surroundings and instructions all contributed to fear."
+          "Warning signs, the room, equipment and noise could make the scan frightening."
         ],
         [
           "What changed",
-          "Created themed rooms, equipment graphics and stories to guide the scan."
+          "Created themed rooms, equipment graphics and stories that guided children through the scan."
         ]
       ],
       "The design scope expanded from the scanner’s enclosure to the experience delivered by the hospital."
@@ -123,44 +123,44 @@ const slides = [
       "GE product and experience documentation",
       "https://www.gehealthcare.com/en-us/products/imaging-accessories/adventure-series"
     ],
-    "ko": "장비가 정상 작동해도 실제 이용 경험은 두려울 수 있었습니다. 병원에서 아이와 가족의 반응을 본 디자이너는 아이의 눈높이에서 공간과 안내를 다시 살펴보고, 어린이·병원 직원·어린이박물관 전문가와 함께 작업했습니다. 장비 외형을 넘어 공간 그래픽과 이야기, 직원의 안내를 포함하는 검사 경험으로 설계 범위가 넓어졌습니다."
+    "ko": "병원에서 자신이 설계한 장비를 보러 간 더그 디츠는 검사실 앞에서 울고 얼어붙는 아이와 가족을 만났습니다. 아이의 눈높이에서 경고 표지, 공간과 장비, 소음이 얼마나 무서울 수 있는지 발견했습니다. 이후 아이들과 병원 직원, 어린이박물관 전문가들과 함께 작업하며 검사실·장비 그래픽·이야기·안내를 아우르는 Adventure Series를 만들었습니다. 영상은 01:58–03:58에서 병원 관찰과 문제 발견을, 10:52–13:40에서 해적 테마 검사실과 아이의 반응을 보면 됩니다. 두 구간은 총 4분 48초입니다."
   },
   {
     "tag": "Case 05 / Cooper Hewitt + Tellart · On-site operational testing · 2015 experience",
     "content": [
       "Cooper Hewitt: test the museum workflow.",
-      "Before deploying the Pen, the museum had to connect the visitor device to admission and everyday front-desk work.",
+      "The Pen let visitors collect objects and draw on interactive tables. Giving it out also changed the front desk’s work.",
       [
         [
           "Why go?",
-          "How would staff distribute Pens, pair tickets and guide visitors?"
+          "Pair each Pen with a visitor’s ticket while handling admission and questions."
         ],
         [
           "In the setting",
-          "Tested several operational approaches in the real museum environment."
+          "Tested operational approaches in the museum and iterated tools with staff."
         ],
         [
           "What they learned",
-          "Pairing and guidance had to fit existing front-desk responsibilities."
+          "Pairing had to fit ticket sales; unclear errors and too much feedback confused staff."
         ],
         [
           "What changed",
-          "Built ticket-pairing electronics, administrative tools and a distribution process."
+          "Built ticket-pairing electronics and refined the Pen Pairing Station for a brief 5–10-second task."
         ]
       ],
-      "An operational field pilot: the device’s design and the venue’s delivery process had to work together."
+      "Staff feedback shaped the pairing interface, messages and workflow used to deliver the visitor experience."
     ],
     "link": [
-      "Design and testing account: Cooper Hewitt",
-      "https://www.cooperhewitt.org/new-experience/designing-pen/"
+      "Museum’s operational research and iteration",
+      "https://labs.cooperhewitt.org/2016/museums-and-the-web-conference-recap-administrative-tools-at-cooper-hewitt/"
     ],
-    "ko": "펜을 배포하기 전에 실제 미술관에서 티켓·기기 연결과 안내 과정을 여러 방식으로 시험했습니다. 관객에게 기기를 주는 작업은 입장 응대와 함께 돌아가야 했습니다. 그 결과 티켓 연결 전자 장치와 관리 도구, 배포 과정이 구체화됐습니다. 이는 관객 행동을 관찰하는 조사와 구분되는 현장 운영 파일럿 사례입니다."
+    "ko": "이 사례는 2015년 도입된 Pen을 다룹니다. 관람객은 전시물 정보를 수집하고 인터랙티브 테이블에서 그림을 그릴 수 있었습니다. 방문 기록을 나중에 확인할 수 있도록 안내 데스크에서는 Pen을 각 입장권과 연결해야 했습니다. 직원은 환영 인사·결제·질문 응대와 이 연결 작업을 함께 처리해야 했습니다. 미술관은 실제 환경에서 여러 운영 방식을 시험하고 직원들과 도구를 반복 개선했습니다. 복잡한 오류 메시지와 과도한 피드백이 혼란을 준다는 점을 반영해 Pen Pairing Station과 안내를 다듬었습니다. 한 번의 연결 작업은 5~10초였지만 그 짧은 흐름을 위해 많은 반복이 필요했습니다. 영상은 관람객의 Pen 사용 방식을 보여주는 00:00–00:39 전체를 시청하면 됩니다. 직원 업무에 관한 현장조사와 개선 내용은 연결된 미술관 원문에 설명되어 있습니다."
   },
   {
     "tag": "Case 06 / GOV.UK Notify · Workplace observation · 2018",
     "content": [
       "Notify: watch the work around the screen.",
-      "After launch, researchers investigated a use case that early development had given little attention: one-off messages during phone calls.",
+      "GOV.UK Notify helps staff send messages while handling public enquiries. Workplace observation revealed a login barrier.",
       [
         [
           "Why go?",
@@ -176,23 +176,23 @@ const slides = [
         ],
         [
           "What changed",
-          "Released email authentication; a faster messaging interface was still in development."
+          "Added email authentication so staff could log in without accessing a mobile phone."
         ]
       ],
-      "The released authentication change addressed a workplace condition, not a lack of user skill."
+      "Observing real work revealed a workplace rule that directly changed the service’s sign-in options."
     ],
     "link": [
       "Research team’s original account",
       "https://userresearch.blog.gov.uk/2018/06/12/how-were-using-contextual-research-to-improve-gov-uk-notify/"
     ],
-    "ko": "출시 후 실제 업무 현장을 방문해 전화 응대와 문자 발송을 함께 관찰했습니다. 일부 직원은 휴대폰을 사물함에 보관해야 해서 문자 인증으로 로그인할 수 없었습니다. 이에 이메일 인증을 도입했습니다. 빠른 개별 발송 인터페이스는 당시 개발 중이었으므로 이미 완료된 개선과 구분합니다."
+    "ko": "GOV.UK Notify는 공공기관 직원이 시민에게 문자·이메일·편지를 보낼 수 있게 하는 서비스입니다. 조사팀은 직원들이 실제로 전화 응대와 개별 메시지 발송을 하는 현장을 방문하고 업무와 통화를 관찰했습니다. 일부 직원은 근무 중 휴대전화를 사물함에 보관해야 해서 문자 인증으로 로그인할 수 없었습니다. 팀은 휴대전화 없이도 로그인할 수 있도록 이메일 인증을 도입했습니다. 화면 안의 조작을 넘어 실제 업무 규칙과 주변 활동을 살펴본 결과가 서비스 변경으로 이어진 사례입니다. 이 페이지에는 해당 연구의 영상 대신 연구팀이 공개한 실제 화면과 발견·개선의 연결을 넣었습니다."
   }
 ];
 const visuals = {
   "Case 01 / Airbnb · New York · 2009": "<div class=\"visual case-media\"><figure class=\"field-video\"><div class=\"video-shell\"><iframe src=\"https://www.youtube-nocookie.com/embed/TCA_7RVo7Uo\" title=\"Joe Gebbia and Reid Hoffman: Scaling Product at Airbnb\" allow=\"accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen\" allowfullscreen referrerpolicy=\"strict-origin-when-cross-origin\"></iframe></div><figcaption>Y Combinator · founder interview, 2017.<br><strong>Watch 03:01–05:50</strong> · Host visits and usability problems.<br><strong>Then 08:13–10:33</strong> · Field research, improvements and results.<br>Total viewing: 5 min 9 sec. <a href=\"https://www.ycombinator.com/blog/scaling-product-airbnb\" target=\"_blank\" rel=\"noopener noreferrer\">Video source</a></figcaption></figure><figure class=\"field-photo media-short\"><button type=\"button\" class=\"image-open\" data-image=\"media/airbnb-gebbia.png\" data-alt=\"Airbnb co-founder Joe Gebbia\" data-credit=\"Joe Gebbia · interview portrait, not a photograph of the 2009 visits.\" aria-label=\"Enlarge: Airbnb co-founder Joe Gebbia\"><img src=\"media/airbnb-gebbia.png\" alt=\"Airbnb co-founder Joe Gebbia\"></button><figcaption>Joe Gebbia · interview portrait, not a photograph of the 2009 visits. <a href=\"https://review.firstround.com/how-design-thinking-transformed-airbnb-from-failing-startup-to-billion-dollar-business/\" target=\"_blank\" rel=\"noopener noreferrer\">Source</a></figcaption></figure></div>",
   "Case 02 / Unilever + WSUP + IDEO.org · Clean Team · Before 2012 launch": "<div class=\"visual case-media\"><figure class=\"field-video\"><div class=\"video-shell\"><iframe src=\"https://player.vimeo.com/video/57379407\" title=\"IDEO.org: Crapmap Prototyping Journey\" allow=\"accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen\" allowfullscreen referrerpolicy=\"strict-origin-when-cross-origin\"></iframe></div><figcaption>IDEO.org · eight weeks of fieldwork and prototyping in Kumasi.<br><strong>Watch 00:00–02:13 · Full video (2 min 13 sec).</strong><br>A visual project diary; read the case text for the research findings. <a href=\"https://wsup.com/wp-content/uploads/2017/08/PN008-ENGLISH-CleanTeam.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Paid-trial evidence: WSUP, Nov 2011</a>. <a href=\"https://vimeo.com/57379407\" target=\"_blank\" rel=\"noopener noreferrer\">Video source</a></figcaption></figure><div class=\"media-pair\"><figure class=\"field-photo \"><button type=\"button\" class=\"image-open\" data-image=\"media/clean-team.jpg\" data-alt=\"Clean Team in-home toilet\" data-credit=\"IDEO.org · project photograph.\" aria-label=\"Enlarge: Clean Team in-home toilet\"><img src=\"media/clean-team.jpg\" alt=\"Clean Team in-home toilet\"></button><figcaption>IDEO.org · project photograph. <a href=\"https://www.ideo.org/project/clean-team\" target=\"_blank\" rel=\"noopener noreferrer\">Source</a></figcaption></figure><figure class=\"field-photo \"><button type=\"button\" class=\"image-open\" data-image=\"media/clean-team-diagram.png\" data-alt=\"Clean Team collection and treatment service diagram\" data-credit=\"IDEO.org · final service system.\" aria-label=\"Enlarge: Clean Team collection and treatment service diagram\"><img src=\"media/clean-team-diagram.png\" alt=\"Clean Team collection and treatment service diagram\"></button><figcaption>IDEO.org · final service system. <a href=\"https://www.ideo.org/project/clean-team\" target=\"_blank\" rel=\"noopener noreferrer\">Source</a></figcaption></figure></div></div>",
-  "Case 03 / Crowne Plaza + IDEO · Live hotel pilot · Reported 2016": "<div class=\"visual case-media image-case\"><figure class=\"field-photo \"><button type=\"button\" class=\"image-open\" data-image=\"https://cdn.prod.website-files.com/68c99b3e3a4f357e8af47a40/68d1563407f62011c1d4d449_6501e17b507eeeaff049bf2b_1657557617-image12.jpeg\" data-alt=\"The Crowne Plaza workspace tested by IDEO\" data-credit=\"IDEO · the actual redesigned hotel workspace.\" aria-label=\"Enlarge: The Crowne Plaza workspace tested by IDEO\"><img src=\"https://cdn.prod.website-files.com/68c99b3e3a4f357e8af47a40/68d1563407f62011c1d4d449_6501e17b507eeeaff049bf2b_1657557617-image12.jpeg\" alt=\"The Crowne Plaza workspace tested by IDEO\"></button><figcaption>IDEO · the actual redesigned hotel workspace. <a href=\"https://www.ideo.com/journal/catching-ghosts\" target=\"_blank\" rel=\"noopener noreferrer\">Source</a></figcaption></figure><figure class=\"field-photo media-short\"><button type=\"button\" class=\"image-open\" data-image=\"https://cdn.prod.website-files.com/68c99b3e3a4f357e8af47a40/68d1563407f62011c1d4d418_6501e17b507eeeaff049bf29_1657557649-image14.jpeg\" data-alt=\"A proximity sensor under a pilot workspace stool\" data-credit=\"IDEO · proximity sensor under a hard plastic stool.\" aria-label=\"Enlarge: A proximity sensor under a pilot workspace stool\"><img src=\"https://cdn.prod.website-files.com/68c99b3e3a4f357e8af47a40/68d1563407f62011c1d4d418_6501e17b507eeeaff049bf29_1657557649-image14.jpeg\" alt=\"A proximity sensor under a pilot workspace stool\"></button><figcaption>IDEO · proximity sensor under a hard plastic stool. <a href=\"https://www.ideo.com/journal/catching-ghosts\" target=\"_blank\" rel=\"noopener noreferrer\">Source</a></figcaption></figure></div>",
-  "Case 04 / GE Healthcare · Adventure Series · Designer’s account, 2012": "<div class=\"visual case-media\"><figure class=\"field-video\"><div class=\"video-shell\"><iframe src=\"https://www.youtube-nocookie.com/embed/jajduxPD6H4\" title=\"Doug Dietz: Transforming healthcare for children and their families\" allow=\"accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen\" allowfullscreen referrerpolicy=\"strict-origin-when-cross-origin\"></iframe></div><figcaption>TEDxSanJoseCA · the designer’s firsthand account, 2012. <a href=\"https://tedxsanjoseca.org/doug-dietz/\" target=\"_blank\" rel=\"noopener noreferrer\">Video source</a></figcaption></figure><figure class=\"field-photo media-short\"><button type=\"button\" class=\"image-open\" data-image=\"https://s7d9.scene7.com/is/image/gehealthcare/adventure-series-pirate-island-st-en?fmt=webp\" data-alt=\"GE Healthcare Pirate Island themed imaging room\" data-credit=\"GE HealthCare · Pirate Island, an actual Adventure Series design.\" aria-label=\"Enlarge: GE Healthcare Pirate Island themed imaging room\"><img src=\"https://s7d9.scene7.com/is/image/gehealthcare/adventure-series-pirate-island-st-en?fmt=webp\" alt=\"GE Healthcare Pirate Island themed imaging room\"></button><figcaption>GE HealthCare · Pirate Island, an actual Adventure Series design. <a href=\"https://www.gehealthcare.com/en-us/products/imaging-accessories/adventure-series\" target=\"_blank\" rel=\"noopener noreferrer\">Source</a></figcaption></figure></div>",
-  "Case 05 / Cooper Hewitt + Tellart · On-site operational testing · 2015 experience": "<div class=\"visual case-media\"><figure class=\"field-video\"><div class=\"video-shell\"><iframe src=\"https://www.youtube-nocookie.com/embed/ejIvvwmtX8M\" title=\"Cooper Hewitt: The Pen\" allow=\"accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen\" allowfullscreen referrerpolicy=\"strict-origin-when-cross-origin\"></iframe></div><figcaption>Cooper Hewitt · official visitor instructions, 39 seconds. <a href=\"https://www.cooperhewitt.org/2015/03/05/using-the-pen/\" target=\"_blank\" rel=\"noopener noreferrer\">Video source</a></figcaption></figure><div class=\"media-pair\"><figure class=\"field-photo \"><button type=\"button\" class=\"image-open\" data-image=\"media/pen-table.png\" data-alt=\"The Cooper Hewitt Pen at an interactive table\" data-credit=\"Cooper Hewitt · Pen in use.\" aria-label=\"Enlarge: The Cooper Hewitt Pen at an interactive table\"><img src=\"media/pen-table.png\" alt=\"The Cooper Hewitt Pen at an interactive table\"></button><figcaption>Cooper Hewitt · Pen in use. <a href=\"https://www.cooperhewitt.org/new-experience/designing-pen/\" target=\"_blank\" rel=\"noopener noreferrer\">Source</a></figcaption></figure><figure class=\"field-photo \"><button type=\"button\" class=\"image-open\" data-image=\"media/pen-instructions.jpg\" data-alt=\"The museum’s Pen instruction card\" data-credit=\"Cooper Hewitt · visitor instructions.\" aria-label=\"Enlarge: The museum’s Pen instruction card\"><img src=\"media/pen-instructions.jpg\" alt=\"The museum’s Pen instruction card\"></button><figcaption>Cooper Hewitt · visitor instructions. <a href=\"https://labs.cooperhewitt.org/2016/museums-and-the-web-conference-recap-administrative-tools-at-cooper-hewitt/\" target=\"_blank\" rel=\"noopener noreferrer\">Source</a></figcaption></figure></div></div>",
+  "Case 03 / Crowne Plaza + IDEO · Live hotel pilot · Reported 2016": "<div class=\"visual case-media crowne-explainer\"><figure class=\"field-photo crowne-primary\"><button type=\"button\" class=\"image-open\" data-image=\"https://cdn.prod.website-files.com/68c99b3e3a4f357e8af47a40/68cc2fbabb1c4c133e2d3c6b_6501e17b507eeeaff049c449_1657493180-crowne_plaza_2.jpeg\" data-alt=\"Crowne Plaza meeting booth with shared screen and ordering tablet\" data-credit=\"IDEO · Ignition meeting booth.\" aria-label=\"Enlarge: Crowne Plaza meeting booth with shared screen and ordering tablet\"><img src=\"https://cdn.prod.website-files.com/68c99b3e3a4f357e8af47a40/68cc2fbabb1c4c133e2d3c6b_6501e17b507eeeaff049c449_1657493180-crowne_plaza_2.jpeg\" alt=\"Crowne Plaza meeting booth with shared screen and ordering tablet\"><span class=\"photo-marker\" style=\"left:67%;top:30%\" aria-hidden=\"true\">1</span><span class=\"photo-marker\" style=\"left:60%;top:48%\" aria-hidden=\"true\">2</span></button><figcaption><strong>Meeting booth</strong><br><b>1</b> Shared screen beside the meeting table. <b>2</b> Tablet for food orders and Host chat. <a href=\"https://www.ideo.com/case-study/designing-a-modern-work-experience-for-business-travelers\" target=\"_blank\" rel=\"noopener noreferrer\">IDEO project</a></figcaption></figure><figure class=\"field-photo crowne-secondary\"><button type=\"button\" class=\"image-open\" data-image=\"https://cdn.prod.website-files.com/68c99b3e3a4f357e8af47a40/68cc2fbabb1c4c133e2d3c6f_6501e17b507eeeaff049c448_1657493169-crowne_plaza_3.jpeg\" data-alt=\"Crowne Plaza worktable with ordering tablet and power outlets\" data-credit=\"IDEO · Ignition worktable.\" aria-label=\"Enlarge: Crowne Plaza worktable with ordering tablet and power outlets\"><img src=\"https://cdn.prod.website-files.com/68c99b3e3a4f357e8af47a40/68cc2fbabb1c4c133e2d3c6f_6501e17b507eeeaff049c448_1657493169-crowne_plaza_3.jpeg\" alt=\"Crowne Plaza worktable with ordering tablet and power outlets\"><span class=\"photo-marker\" style=\"left:91%;top:51%\" aria-hidden=\"true\">3</span><span class=\"photo-marker\" style=\"left:91%;top:72%\" aria-hidden=\"true\">4</span></button><figcaption><strong>Worktable with services at hand</strong><br><b>3</b> Ordering tablet. <b>4</b> Power beside the working surface. <a href=\"https://www.ideo.com/case-study/designing-a-modern-work-experience-for-business-travelers\" target=\"_blank\" rel=\"noopener noreferrer\">IDEO project</a></figcaption></figure></div>",
+  "Case 04 / GE Healthcare · Adventure Series · Designer’s account, 2012": "<div class=\"visual case-media\"><figure class=\"field-video\"><div class=\"video-shell\"><iframe src=\"https://www.youtube-nocookie.com/embed/jajduxPD6H4\" title=\"Doug Dietz: Transforming healthcare for children and their families\" allow=\"accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen\" allowfullscreen referrerpolicy=\"strict-origin-when-cross-origin\"></iframe></div><figcaption>TEDxSanJoseCA · designer’s account, 2012 (19 min 47 sec).<br><strong>Watch 01:58–03:58</strong> · Hospital observation and the child’s fear.<br><strong>Then 10:52–13:40</strong> · Pirate-themed room and the child’s response.<br>Total viewing: 4 min 48 sec. <a href=\"https://tedxsanjoseca.org/doug-dietz/\" target=\"_blank\" rel=\"noopener noreferrer\">Video source</a></figcaption></figure><figure class=\"field-photo media-short\"><button type=\"button\" class=\"image-open\" data-image=\"https://s7d9.scene7.com/is/image/gehealthcare/adventure-series-pirate-island-st-en?fmt=webp\" data-alt=\"GE Healthcare Pirate Island themed imaging room\" data-credit=\"GE HealthCare · Pirate Island, an actual Adventure Series design.\" aria-label=\"Enlarge: GE Healthcare Pirate Island themed imaging room\"><img src=\"https://s7d9.scene7.com/is/image/gehealthcare/adventure-series-pirate-island-st-en?fmt=webp\" alt=\"GE Healthcare Pirate Island themed imaging room\"></button><figcaption>GE HealthCare · Pirate Island, an actual Adventure Series design. <a href=\"https://www.gehealthcare.com/en-us/products/imaging-accessories/adventure-series\" target=\"_blank\" rel=\"noopener noreferrer\">Source</a></figcaption></figure></div>",
+  "Case 05 / Cooper Hewitt + Tellart · On-site operational testing · 2015 experience": "<div class=\"visual case-media\"><figure class=\"field-video\"><div class=\"video-shell\"><iframe src=\"https://www.youtube-nocookie.com/embed/ejIvvwmtX8M\" title=\"Cooper Hewitt: The Pen\" allow=\"accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen\" allowfullscreen referrerpolicy=\"strict-origin-when-cross-origin\"></iframe></div><figcaption>Cooper Hewitt · how visitors collect and create with the Pen.<br><strong>Watch 00:00–00:39 · Full video (39 sec).</strong> <a href=\"https://www.cooperhewitt.org/2015/03/05/using-the-pen/\" target=\"_blank\" rel=\"noopener noreferrer\">Video source</a></figcaption></figure><div class=\"media-pair\"><figure class=\"field-photo \"><button type=\"button\" class=\"image-open\" data-image=\"media/pen-table.png\" data-alt=\"The Cooper Hewitt Pen at an interactive table\" data-credit=\"Cooper Hewitt · Pen in use.\" aria-label=\"Enlarge: The Cooper Hewitt Pen at an interactive table\"><img src=\"media/pen-table.png\" alt=\"The Cooper Hewitt Pen at an interactive table\"></button><figcaption>Cooper Hewitt · Pen in use. <a href=\"https://www.cooperhewitt.org/new-experience/designing-pen/\" target=\"_blank\" rel=\"noopener noreferrer\">Source</a></figcaption></figure><figure class=\"field-photo \"><button type=\"button\" class=\"image-open\" data-image=\"media/pen-instructions.jpg\" data-alt=\"The museum’s Pen instruction card\" data-credit=\"Cooper Hewitt · visitor instructions.\" aria-label=\"Enlarge: The museum’s Pen instruction card\"><img src=\"media/pen-instructions.jpg\" alt=\"The museum’s Pen instruction card\"></button><figcaption>Cooper Hewitt · visitor instructions. <a href=\"https://labs.cooperhewitt.org/2016/museums-and-the-web-conference-recap-administrative-tools-at-cooper-hewitt/\" target=\"_blank\" rel=\"noopener noreferrer\">Source</a></figcaption></figure></div></div>",
   "Case 06 / GOV.UK Notify · Workplace observation · 2018": "<div class=\"visual case-media notify-case\"><figure class=\"field-photo \"><button type=\"button\" class=\"image-open\" data-image=\"media/notify-screen.png\" data-alt=\"The actual GOV.UK Notify message recipient screen\" data-credit=\"GOV.UK · interface published with the 2018 field-research account.\" aria-label=\"Enlarge: The actual GOV.UK Notify message recipient screen\"><img src=\"media/notify-screen.png\" alt=\"The actual GOV.UK Notify message recipient screen\"></button><figcaption>GOV.UK · interface published with the 2018 field-research account. <a href=\"https://userresearch.blog.gov.uk/2018/06/12/how-were-using-contextual-research-to-improve-gov-uk-notify/\" target=\"_blank\" rel=\"noopener noreferrer\">Source</a></figcaption></figure><section class=\"change-strip\" aria-label=\"Change in authentication\"><p>Workplace finding</p><strong>Phones stored in lockers</strong><p>Service response</p><strong>Email authentication added</strong></section></div>"
 };
